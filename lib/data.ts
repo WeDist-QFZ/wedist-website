@@ -212,7 +212,7 @@ export const brands = [
     id: "promise",
     name: "Promise Technology",
     description: "Enterprise storage, video surveillance, and cloud infrastructure solutions",
-    logo: "/images/promise.jpg",
+    logo: "/images/Promise.jpg",
     tagline: "Realize Your Vision",
     accentColor: "#00bcd4",
     products: [
@@ -326,7 +326,7 @@ export const partners = [
   { name: "Western Digital", logo: "/images/western-digital.png", slug: "western-digital" },
   { name: "BioMax", logo: "/images/biomax.png", slug: "biomax" },
   { name: "Dorlet", logo: "/images/dorlet.png", slug: "dorlet" },
-  { name: "Promise Technology", logo: "/images/promise.jpg", slug: "promise" },
+  { name: "Promise Technology", logo: "/images/Promise.jpg", slug: "promise" },
   { name: "eSSL", logo: "/images/essl.png", slug: "essl" },
 ]
 
@@ -351,7 +351,7 @@ export const downloads = [
     isImportant: true,
     redirectPath: "company-profile",
     externalUrl:
-      "https://firebasestorage.googleapis.com/v0/b/wedist-dashboard-2744d.firebasestorage.app/o/Wedist%20Company%20Profile.pdf?alt=media&token=ff573af1-ca67-4f4f-9142-a3e1c0cd30db",
+      "https://drive.google.com/file/d/1BwheBcMnsrjPw-y1-aPobfzu9voyKIGd/view?usp=sharing",
   },
 ]
 
