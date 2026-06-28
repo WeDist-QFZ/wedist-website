@@ -236,7 +236,7 @@ export const brands = [
     id: "essl",
     name: "eSSL",
     description: "Security at Fingertips - Biometric and time attendance solutions",
-    logo: "/images/essl.png",
+    logo: "/images/eSSL.png",
     tagline: "Security at Fingertips",
     accentColor: "#2b5797",
     products: [
