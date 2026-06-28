@@ -327,7 +327,7 @@ export const partners = [
   { name: "BioMax", logo: "/images/biomax.png", slug: "biomax" },
   { name: "Dorlet", logo: "/images/dorlet.png", slug: "dorlet" },
   { name: "Promise Technology", logo: "/images/Promise.jpg", slug: "promise" },
-  { name: "eSSL", logo: "/images/essl.png", slug: "essl" },
+  { name: "eSSL", logo: "/images/eSSL.png", slug: "essl" },
 ]
 
 export const events = [
