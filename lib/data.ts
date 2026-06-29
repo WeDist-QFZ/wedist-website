@@ -133,7 +133,7 @@ export const brands = [
     id: "western-digital",
     name: "Western Digital",
     description: "Data storage solutions including HDDs, SSDs, and enterprise storage systems",
-    logo: "/images/western-digital.png",
+    logo: "/images/western-digital.jpg",
     tagline: "Data Makes It Possible",
     accentColor: "#e91e8c",
     products: [
@@ -142,17 +142,17 @@ export const brands = [
         name: "Ultrastar Data60",
         description:
           '60-Bay Hybrid Storage Platform in 4U, up to 60x3.5" HDD/SSD bays, 12Gb/s SAS + 6Gb/s SATA, dual redundant I/O modules, IsoVibe + ArcticFlow',
-        image: "/wd-ultrastar-data60.jpg",
-        datasheet: "https://www.ntonline.it/media/Data%20Sheet-Ultrastar%20Data60-Digital-EN-A4-201802-01-DS83.pdf",
+        image: "/images/wd/data60.jpg",
+        datasheet: "https://drive.google.com/file/d/1KqUbaJniW4_KwLigfE6vUH-m2zUgNDp6/view?usp=sharing",
       },
       {
         id: "ultrastar-data102",
         name: "Ultrastar Data102",
         description:
           '102-Bay Hybrid Storage Platform in 4U, up to 102x3.5" HDD/SSD bays, 12Gb/s SAS + 6Gb/s SATA, dual redundant I/O modules, enterprise-grade reliability',
-        image: "/wd-ultrastar-data102.jpg",
+        image: "/images/wd/data102.jpg",
         datasheet:
-          "https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/collateral/solution-brief/solution-brief-ultrastar-data60-data102.pdf",
+          "https://drive.google.com/file/d/1y5OQcOQ4eaH9QwPCvHH6ywGMHlpxfhUV/view?usp=sharing",
       },
     ],
   },
@@ -323,7 +323,7 @@ export const partners = [
   { name: "Antaira", logo: "/images/antaira.jpg", slug: "antaira" },
   { name: "Zyxel Networks", logo: "/images/zyxel.png", slug: "zyxel" },
   { name: "QSAN", logo: "/images/qsan.png", slug: "qsan" },
-  { name: "Western Digital", logo: "/images/western-digital.png", slug: "western-digital" },
+  { name: "Western Digital", logo: "/images/western-digital.jpg", slug: "western-digital" },
   { name: "BioMax", logo: "/images/biomax.png", slug: "biomax" },
   { name: "Dorlet", logo: "/images/dorlet.png", slug: "dorlet" },
   { name: "Promise Technology", logo: "/images/Promise.jpg", slug: "promise" },

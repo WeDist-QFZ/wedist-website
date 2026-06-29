@@ -8,7 +8,7 @@ export function MatrixRain() {
   )
 
   useEffect(() => {
-    const chars = "01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン"
+    const chars = "♔ ♚ ♕ ♛ ♖ ♜ ♘ ♞ ♙ ♟ ♘ ♞"
     const newColumns = Array.from({ length: 25 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,

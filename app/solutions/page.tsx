@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import type React from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -10,6 +13,7 @@ import { CyberCard } from "@/components/cyber-card"
 import { HologramCard } from "@/components/hologram-card"
 import { AnimatedGrid } from "@/components/animated-grid"
 import { FloatingElements } from "@/components/floating-elements"
+import { ContactModal } from "@/components/contact-modal"
 
 const iconMap: Record<string, React.ReactNode> = {
   network: <Network className="w-8 h-8 md:w-10 md:h-10" />,
@@ -19,6 +23,7 @@ const iconMap: Record<string, React.ReactNode> = {
 }
 
 export default function SolutionsPage() {
+  const [contactOpen, setContactOpen] = useState(false)
   return (
     <div className="min-h-screen bg-[#0a0a0f] page-transition">
       <Header />
@@ -130,17 +135,22 @@ export default function SolutionsPage() {
               <p className="text-base md:text-xl text-[#888899] mb-8 md:mb-10 max-w-3xl mx-auto px-2">
                 Our team of experts can help design a tailored solution that perfectly fits your business requirements.
               </p>
-              <a
-                href="#contact"
+              <button
+                onClick={() => setContactOpen(true)}
                 className="inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 bg-[#f5b800] text-[#0a0a0f] rounded-xl font-bold text-base md:text-xl hover:bg-[#c49400] transition-colors glow-yellow"
               >
                 Get in Touch
-              </a>
+              </button>
             </ScrollReveal>
           </div>
+          <ContactModal
+            open={contactOpen}
+            onOpenChange={setContactOpen}
+          />
         </section>
       </main>
       <Footer />
+
     </div>
   )
 }

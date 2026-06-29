@@ -88,7 +88,7 @@ export default function DownloadsPage() {
               Contact our team for specific documentation, custom proposals, or additional technical resources.
             </p>
             <a
-              href="#contact"
+              href="mailto:support@wedist.net?subject=Request%20for%20the%20following%20documents&cc=ashwin@wedist.net"
               className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-[#f5b800] text-[#0a0a0f] rounded-lg font-semibold hover:bg-[#c49400] transition-colors glow-yellow"
             >
               Request Documents

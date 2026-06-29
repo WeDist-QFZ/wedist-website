@@ -8,8 +8,8 @@ import { CyberCard } from "@/components/cyber-card"
 import { CyberParticles } from "@/components/cyber-particles"
 import { GlitchText } from "@/components/glitch-text"
 import { AnimatedCounter } from "@/components/animated-counter"
-import { NeonBorder } from "@/components/neon-border"
 import Image from "next/image"
+import { HologramCard } from "@/components/hologram-card"
 
 export default function AboutPage() {
   return (
@@ -54,14 +54,14 @@ export default function AboutPage() {
               {/* Vision */}
               <ScrollReveal animation="left">
                 <CyberCard tiltEffect>
-                  <NeonBorder>
+                  <HologramCard>
                     <div className="p-6 md:p-10 relative overflow-hidden min-h-[300px] md:min-h-[400px]">
                       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#f5b800] via-[#f5b800]/50 to-transparent" />
                       <div className="relative z-10">
-                        <div className="inline-flex p-4 md:p-5 bg-[#f5b800]/10 rounded-xl text-[#f5b800] mb-6 md:mb-8 group-hover:bg-[#f5b800]/20 transition-colors">
+                        <div className="inline-flex p-4 md:p-5 bg-[#f5b800]/10 rounded-xl text-[#f5b800] mb-6 md:mb-8 group-hover:bg-[#f5b800]/20 transition-all duration-500 glow-yellow">
                           <Eye className="w-8 h-8 md:w-10 md:h-10" />
                         </div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-[#f0f0f5] mb-4 md:mb-6">Our Vision</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#f0f0f5] group-hover:text-[#f5b800] transition-colors duration-500">Our Vision</h2>
                         <div className="space-y-3 md:space-y-4 text-[#888899] leading-relaxed text-base md:text-lg">
                           <p>To empower our customers and deliver world-class service.</p>
                           <p>
@@ -75,21 +75,21 @@ export default function AboutPage() {
                         </div>
                       </div>
                     </div>
-                  </NeonBorder>
+                  </HologramCard>
                 </CyberCard>
               </ScrollReveal>
 
               {/* Mission */}
               <ScrollReveal animation="right">
                 <CyberCard tiltEffect>
-                  <NeonBorder>
+                  <HologramCard>
                     <div className="p-6 md:p-10 relative overflow-hidden min-h-[300px] md:min-h-[400px]">
                       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#f5b800] via-[#f5b800]/50 to-transparent" />
                       <div className="relative z-10">
-                        <div className="inline-flex p-4 md:p-5 bg-[#f5b800]/10 rounded-xl text-[#f5b800] mb-6 md:mb-8">
+                        <div className="inline-flex p-4 md:p-5 bg-[#f5b800]/10 rounded-xl text-[#f5b800] mb-6 md:mb-8 group-hover:bg-[#f5b800]/20 transition-all duration-500 glow-yellow">
                           <Target className="w-8 h-8 md:w-10 md:h-10" />
                         </div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-[#f0f0f5] mb-4 md:mb-6">Our Mission</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#f0f0f5] group-hover:text-[#f5b800] transition-colors duration-500">Our Mission</h2>
                         <div className="space-y-3 md:space-y-4 text-[#888899] leading-relaxed text-base md:text-lg">
                           <p>
                             We believe a green business is a commitment to society and the planet we live in, focusing
@@ -103,7 +103,7 @@ export default function AboutPage() {
                         </div>
                       </div>
                     </div>
-                  </NeonBorder>
+                  </HologramCard>
                 </CyberCard>
               </ScrollReveal>
             </div>
@@ -118,13 +118,19 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <ScrollReveal animation="up">
               <div className="text-center mb-10 md:mb-16">
-                <Image
-                  src="/images/weappreciate.png"
-                  alt="WeAppreciate Logo"
-                  width={300}
-                  height={80}
-                  className="mx-auto mb-6 md:mb-8 w-[200px] md:w-[300px] h-auto"
-                />
+                <div className="flex justify-center mb-6 md:mb-8">
+  <Image
+    src="/images/weappreciate.png"
+    alt="WeAppreciate Logo"
+    width={300}
+    height={80}
+    className="w-[200px] md:w-[400px] h-auto"
+    style={{
+      filter:
+        "drop-shadow(1px 0 white) drop-shadow(-1px 0 white) drop-shadow(0 1px white) drop-shadow(0 -1px white)",
+    }}
+  />
+</div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#f0f0f5] mb-4">
                   Partner Rewards <span className="text-[#f5b800] text-glow">Programme</span>
                 </h2>
@@ -177,7 +183,7 @@ export default function AboutPage() {
 
               <ScrollReveal animation="right">
                 <CyberCard tiltEffect>
-                  <NeonBorder>
+                  <HologramCard>
                     <div className="p-6 md:p-10 bg-[#121218] rounded-xl">
                       <h3 className="text-xl md:text-2xl font-bold text-[#f0f0f5] mb-4 md:mb-6">Growing Together</h3>
                       <p className="text-[#888899] leading-relaxed mb-4 md:mb-6 text-sm md:text-base">
@@ -192,7 +198,7 @@ export default function AboutPage() {
                         Let's unfold together.
                       </p>
                     </div>
-                  </NeonBorder>
+                  </HologramCard>
                 </CyberCard>
               </ScrollReveal>
             </div>

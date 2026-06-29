@@ -123,6 +123,16 @@
     @apply bg-background text-foreground;
     overflow-x: hidden;
   }
+
+  /* Uniformly scale the entire UI down to ~75% so it matches the
+     appearance of 75% browser zoom at 100% zoom. `zoom` reflows
+     content exactly like native browser zoom (unlike transform:scale,
+     which leaves empty space and breaks fixed/sticky positioning),
+     so all layout, text, spacing, and graphics shrink together
+     without affecting any element's behavior. */
+  html {
+    zoom: 0.75;
+  }
 }
 
 /* ===============================================
