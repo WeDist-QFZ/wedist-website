@@ -14,7 +14,7 @@ export function ElectricButton({ children, className = "", onClick, accentColor 
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <Button
+    <Button 
       className={`relative overflow-hidden group ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
