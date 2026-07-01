@@ -1078,6 +1078,16 @@ html {
   }
 }
 
+/* Projects Marquee */
+@keyframes projects-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .rotating-gradient-border {
   background: linear-gradient(90deg, #f5b800, #ffd700, #f5b800);
   background-size: 200% 200%;
