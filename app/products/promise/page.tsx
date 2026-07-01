@@ -24,7 +24,7 @@ export default function PromisePage() {
       <main className="pt-28 md:pt-32">
         {/* Hero Section - Cyan Theme */}
         <section className="py-32 relative overflow-hidden">
-          <DataStreamBg color="#00bcd4" />
+          {/* <DataStreamBg color="#00bcd4" /> */}
           <CyberParticles count={30} color="#00bcd4" />
           <FloatingElements count={6} color="#00bcd4" />
 

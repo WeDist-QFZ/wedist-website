@@ -24,7 +24,7 @@ export default function QsanPage() {
       <main className="pt-28 md:pt-32">
         {/* Hero Section - Bright Green Theme */}
         <section className="py-32 relative overflow-hidden">
-          <DataStreamBg color="#7dc832" />
+          {/* <DataStreamBg color="#7dc832" /> */}
           <CyberParticles count={30} color="#7dc832" />
           <FloatingElements count={6} color="#7dc832" />
 

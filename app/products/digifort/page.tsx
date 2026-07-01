@@ -24,7 +24,7 @@ export default function DigifortPage() {
       <main className="pt-28 md:pt-32">
         {/* Hero Section - Red/Maroon Theme */}
         <section className="py-32 relative overflow-hidden">
-          <DataStreamBg color="#a61c1c" />
+          {/* <DataStreamBg color="#a61c1c" /> */}
           <CyberParticles count={30} color="#a61c1c" />
           <FloatingElements count={6} color="#a61c1c" />
 

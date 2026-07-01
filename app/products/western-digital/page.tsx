@@ -24,7 +24,7 @@ export default function WesternDigitalPage() {
       <main className="pt-28 md:pt-32">
         {/* Hero Section - Magenta/Pink Theme */}
         <section className="py-32 relative overflow-hidden">
-          <DataStreamBg color="#e91e8c" />
+          {/* <DataStreamBg color="#e91e8c" /> */}
           <CyberParticles count={30} color="#e91e8c" />
           <FloatingElements count={6} color="#e91e8c" />
 

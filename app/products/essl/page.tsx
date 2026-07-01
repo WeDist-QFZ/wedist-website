@@ -24,7 +24,7 @@ export default function EsslPage() {
       <main className="pt-28 md:pt-32">
         {/* Hero Section - Blue Theme */}
         <section className="py-32 relative overflow-hidden">
-          <DataStreamBg color="#2b5797" />
+          {/* <DataStreamBg color="#2b5797" /> */}
           <CyberParticles count={30} color="#2b5797" />
           <FloatingElements count={6} color="#2b5797" />
 

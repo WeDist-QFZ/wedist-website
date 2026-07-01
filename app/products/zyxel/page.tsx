@@ -24,7 +24,7 @@ export default function ZyxelPage() {
       <main className="pt-28 md:pt-32">
         {/* Hero Section - Green Theme */}
         <section className="py-32 relative overflow-hidden">
-          <DataStreamBg color="#6cc24a" />
+          {/* <DataStreamBg color="#6cc24a" /> */}
           <CyberParticles count={30} color="#6cc24a" />
           <FloatingElements count={6} color="#6cc24a" />
 

@@ -151,9 +151,9 @@ export function HeroSection() {
             }`}
           >
             {[
+              { value: 20, suffix: "+", label: "Brand Partners" },
               { value: 500, suffix: "+", label: "Enterprise Clients" },
-              { value: 50, suffix: "+", label: "Brand Partners" },
-              { value: 15, suffix: "+", label: "Years Experience" },
+              { value: 1000, suffix: "+", label: "Success Stories" },
               { value: 24, suffix: "/7", label: "Technical Support" },
             ].map((stat, index) => (
               <div key={index} className="text-center group">

@@ -24,7 +24,7 @@ export default function BiomaxPage() {
       <main className="pt-28 md:pt-32">
         {/* Hero Section - Green Theme */}
         <section className="py-32 relative overflow-hidden">
-          <DataStreamBg color="#7cc242" />
+          {/* <DataStreamBg color="#7cc242" /> */}
           <CyberParticles count={30} color="#7cc242" />
           <FloatingElements count={6} color="#7cc242" />
 

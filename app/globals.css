@@ -242,10 +242,32 @@
 
 @keyframes scanline-move {
   0% {
-    background-position: 0 0;
+    transform: translateX(-100%);
   }
   100% {
-    background-position: 0 100px;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes projects-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.marquee-gpu {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
   }
 }
 
@@ -718,6 +740,24 @@
     transform: translateX(-50%);
   }
   100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes marqueeReverse {
+  from {
+    transform: translateX(-33.333%);
+  }
+  to {
     transform: translateX(0);
   }
 }
