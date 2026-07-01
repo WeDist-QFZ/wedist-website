@@ -38,7 +38,7 @@ export const brands = [
         name: "Digifort Enterprise",
         description:
           "The ultimate high-tier VMS platform offering unlimited camera scalability",
-        image: "/images/digifort/Digifort-Enterprise.png",
+        image: "/images/digifort/digifort_enterprise.png",
         datasheet: "https://drive.google.com/file/d/1_fIRVRCFIHPqI4AzY4proos9dtg4CTrb/view?usp=sharing",
       },
       {
@@ -46,7 +46,7 @@ export const brands = [
         name: "Digifort Professional",
         description:
           "A comprehensive VMS solution for medium-to-large installations",
-        image: "/images/digifort/Digifort-Professional.png",
+        image: "/images/digifort/digifort_professional.png",
         datasheet: "https://drive.google.com/file/d/1YtzpjT1HwxIta3NtsdInx8BXdUHLdNJM/view?usp=sharing",
       },
     ],
