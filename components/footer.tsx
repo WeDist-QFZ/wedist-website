@@ -45,22 +45,20 @@ function WhatsAppIcon({ className }: { className?: string }) {
 export function Footer() {
   return (
     <footer className="bg-[#050508] border-t border-[#f5b800]/20">
-      <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 py-14 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.6fr_1.2fr_1fr] gap-12 xl:gap-16 items-stretch">
+      <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 py-14 md:py-10 lg:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.6fr_1.2fr_1fr] gap-12 md:gap-8 xl:gap-12 items-start">
           {/* Company Info */}
-          <div className="space-y-6">
-
+          <div className="space-y-6 md:space-y-4">
             <Image
               src="/images/wedist-logo.png"
               alt="WeDist Logo"
               width={320}
               height={115}
-              className="h-[88px] md:h-[105px] w-auto"
+              className="h-[88px] md:h-[72px] w-auto"
             />
 
             {/* Brand Statement */}
-            <div className="space-y-3">
-
+            <div className="space-y-3 md:space-y-2">
               <div className="flex items-center gap-4">
                 <div className="h-px w-10 bg-gradient-to-r from-[#f5b800] to-transparent" />
                 <span className="uppercase tracking-[0.35em] text-[11px] text-[#888899]">
@@ -68,150 +66,122 @@ export function Footer() {
                 </span>
               </div>
 
-              <h2 className="text-2xl md:text-3xl font-bold leading-tight">
+              <h2 className="text-2xl md:text-xl font-bold leading-tight">
                 <span className="text-[#f5b800]">We Empower.</span>
                 <br />
                 <span className="text-white">We Deliver.</span>
               </h2>
 
-              <p className="max-w-sm text-[#a5a5b5] text-[15px] md:text-base leading-7">
-                Delivering enterprise-grade technology solutions that enable businesses
-                to innovate, secure, and scale with confidence.
+              <p className="max-w-sm text-[#a5a5b5] text-[15px] md:text-sm leading-7 md:leading-6">
+                Delivering enterprise-grade technology solutions that enable businesses to innovate, secure, and scale
+                with confidence.
               </p>
-
             </div>
 
             {/* Socials */}
-            <div className="flex items-center gap-4 pt-2">
-
+            <div className="flex items-center gap-4 md:gap-3 pt-2 md:pt-0">
               <a
                 href="https://www.linkedin.com/company/wedist"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-10 h-10 rounded-full border border-[#f5b800]/20 bg-white/[0.02] flex items-center justify-center text-[#888899] hover:text-[#f5b800] hover:border-[#f5b800]/50 hover:bg-[#f5b800]/10 transition-all duration-300"
+                className="group w-10 h-10 md:w-9 md:h-9 rounded-full border border-[#f5b800]/20 bg-white/[0.02] flex items-center justify-center text-[#888899] hover:text-[#f5b800] hover:border-[#f5b800]/50 hover:bg-[#f5b800]/10 transition-all duration-300"
               >
-                <LinkedInIcon className="w-5 h-5" />
+                <LinkedInIcon className="w-5 h-5 md:w-[18px] md:h-[18px]" />
               </a>
 
               <a
                 href="https://www.facebook.com/WEDISTQFZ"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-10 h-10 rounded-full border border-[#f5b800]/20 bg-white/[0.02] flex items-center justify-center text-[#888899] hover:text-[#f5b800] hover:border-[#f5b800]/50 hover:bg-[#f5b800]/10 transition-all duration-300"
+                className="group w-10 h-10 md:w-9 md:h-9 rounded-full border border-[#f5b800]/20 bg-white/[0.02] flex items-center justify-center text-[#888899] hover:text-[#f5b800] hover:border-[#f5b800]/50 hover:bg-[#f5b800]/10 transition-all duration-300"
               >
-                <FacebookIcon className="w-5 h-5" />
+                <FacebookIcon className="w-5 h-5 md:w-[18px] md:h-[18px]" />
               </a>
 
               <a
                 href="https://instagram.com/wedistqfz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-10 h-10 rounded-full border border-[#f5b800]/20 bg-white/[0.02] flex items-center justify-center text-[#888899] hover:text-[#f5b800] hover:border-[#f5b800]/50 hover:bg-[#f5b800]/10 transition-all duration-300"
+                className="group w-10 h-10 md:w-9 md:h-9 rounded-full border border-[#f5b800]/20 bg-white/[0.02] flex items-center justify-center text-[#888899] hover:text-[#f5b800] hover:border-[#f5b800]/50 hover:bg-[#f5b800]/10 transition-all duration-300"
               >
-                <InstagramIcon className="w-5 h-5" />
+                <InstagramIcon className="w-5 h-5 md:w-[18px] md:h-[18px]" />
               </a>
 
               <a
                 href="https://youtube.com/channel/UCFHIuJtxezhkuZEANnYLSsQ"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-10 h-10 rounded-full border border-[#f5b800]/20 bg-white/[0.02] flex items-center justify-center text-[#888899] hover:text-[#f5b800] hover:border-[#f5b800]/50 hover:bg-[#f5b800]/10 transition-all duration-300"
+                className="group w-10 h-10 md:w-9 md:h-9 rounded-full border border-[#f5b800]/20 bg-white/[0.02] flex items-center justify-center text-[#888899] hover:text-[#f5b800] hover:border-[#f5b800]/50 hover:bg-[#f5b800]/10 transition-all duration-300"
               >
-                <YouTubeIcon className="w-5 h-5" />
+                <YouTubeIcon className="w-5 h-5 md:w-[18px] md:h-[18px]" />
               </a>
 
               <a
                 href="https://api.whatsapp.com/send?phone=97430624212"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-10 h-10 rounded-full border border-[#f5b800]/20 bg-white/[0.02] flex items-center justify-center text-[#888899] hover:text-[#f5b800] hover:border-[#f5b800]/50 hover:bg-[#f5b800]/10 transition-all duration-300"
+                className="group w-10 h-10 md:w-9 md:h-9 rounded-full border border-[#f5b800]/20 bg-white/[0.02] flex items-center justify-center text-[#888899] hover:text-[#f5b800] hover:border-[#f5b800]/50 hover:bg-[#f5b800]/10 transition-all duration-300"
               >
-                <WhatsAppIcon className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5 md:w-[18px] md:h-[18px]" />
               </a>
-
             </div>
-
           </div>
 
-<div className="grid grid-cols-2 gap-8 lg:gap-12 h-full items-start">
+          <div className="grid grid-cols-2 gap-8 lg:gap-10 items-start">
+            {/* Quick Links */}
+            <div>
+              <div className="flex items-center gap-3 mb-5 md:mb-4">
+                <h3 className="text-[#f5b800] text-lg md:text-base font-semibold tracking-wide">Quick Links</h3>
+                <div className="flex-1 h-px bg-gradient-to-r from-[#f5b800]/30 to-transparent" />
+              </div>
 
-  {/* Quick Links */}
-  <div>
-    <div className="flex items-center gap-3 mb-5">
-      <h3 className="text-[#f5b800] text-lg font-semibold tracking-wide">
-        Quick Links
-      </h3>
-      <div className="flex-1 h-px bg-gradient-to-r from-[#f5b800]/30 to-transparent" />
-    </div>
+              <ul className="space-y-3 md:space-y-2">
+                {["Home", "Products", "Solutions", "Downloads", "About"].map((item) => (
+                  <li key={item}>
+                    <Link
+                      href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                      className="text-[#888899] hover:text-[#f5b800] text-[15px] md:text-sm transition-colors"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-    <ul className="space-y-3 lg:space-y-4">
-      {["Home", "Products", "Solutions", "Downloads", "About"].map((item) => (
-        <li key={item}>
-          <Link
-            href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-            className="
-              text-[#888899]
-              hover:text-[#f5b800]
-              text-[15px]
-              lg:text-base
-              transition-colors
-            "
-          >
-            {item}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </div>
+            {/* Solutions */}
+            <div>
+              <div className="flex items-center gap-3 mb-5 md:mb-4">
+                <h3 className="text-[#f5b800] text-lg md:text-base font-semibold tracking-wide">Solutions</h3>
+                <div className="flex-1 h-px bg-gradient-to-r from-[#f5b800]/30 to-transparent" />
+              </div>
 
-  {/* Solutions */}
-  <div>
-    <div className="flex items-center gap-3 mb-5">
-      <h3 className="text-[#f5b800] text-lg font-semibold tracking-wide">
-        Solutions
-      </h3>
-      <div className="flex-1 h-px bg-gradient-to-r from-[#f5b800]/30 to-transparent" />
-    </div>
+              <ul className="space-y-3 md:space-y-2">
+                {["Video Surveillance", "Access Control", "Data Storage", "Enterprise Networking"].map((item) => (
+                  <li key={item}>
+                    <Link
+                      href="/solutions"
+                      className="text-[#888899] hover:text-[#f5b800] text-[15px] md:text-sm transition-colors"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
 
-    <ul className="space-y-3 lg:space-y-4">
-      {["Video Surveillance", "Access Control", "Data Storage", "Enterprise Networking"].map((item) => (
-        <li key={item}>
-          <Link
-            href="/solutions"
-            className="
-              text-[#888899]
-              hover:text-[#f5b800]
-              text-[15px]
-              lg:text-base
-              transition-colors
-            "
-          >
-            {item}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </div>
-
-</div>
-
-          {/* Contact - Updated */}
+          {/* Contact */}
           <div>
-            <h3 className="text-[#f5b800] font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-3">
+            <div className="flex items-center gap-3 mb-5 md:mb-4">
+              <h3 className="text-[#f5b800] text-lg md:text-base font-semibold tracking-wide">Contact Us</h3>
+              <div className="flex-1 h-px bg-gradient-to-r from-[#f5b800]/30 to-transparent md:block hidden" />
+            </div>
+            <ul className="space-y-3 md:space-y-2">
               <li>
                 <a
                   href="tel:+97430624212"
-                  className="
-flex
-items-center
-gap-3
-text-[#888899]
-text-[15px]
-lg:text-base
-hover:text-[#f5b800]
-transition-colors
-"
+                  className="flex items-center gap-3 text-[#888899] text-[15px] md:text-sm hover:text-[#f5b800] transition-colors"
                 >
                   <Phone size={16} className="text-[#f5b800]" />
                   +974 30 62 42 12
@@ -220,30 +190,13 @@ transition-colors
               <li>
                 <a
                   href="mailto:marketing@wedist.net"
-                  className="
-flex
-items-center
-gap-3
-text-[#888899]
-text-[15px]
-lg:text-base
-hover:text-[#f5b800]
-transition-colors
-"
+                  className="flex items-center gap-3 text-[#888899] text-[15px] md:text-sm hover:text-[#f5b800] transition-colors"
                 >
                   <Mail size={16} className="text-[#f5b800]" />
                   marketing@wedist.net
                 </a>
               </li>
-              <li className="
-flex
-items-start
-gap-3
-text-[#888899]
-text-[15px]
-lg:text-base
-leading-7
-">
+              <li className="flex items-start gap-3 text-[#888899] text-[15px] md:text-sm leading-7 md:leading-6">
                 <MapPin size={16} className="text-[#f5b800] mt-0.5 flex-shrink-0" />
                 <span>
                   Wedist QFZ LLC
@@ -260,32 +213,19 @@ leading-7
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-[#2a2a36] flex flex-col lg:flex-row justify-between items-center gap-5">
-          <p className="text-[#888899] text-[15px] lg:text-base">© {new Date().getFullYear()} WeDist. All rights reserved.</p>
+        <div className="mt-16 md:mt-8 pt-8 md:pt-5 border-t border-[#2a2a36] flex flex-col lg:flex-row justify-between items-center gap-5 md:gap-4">
+          <p className="text-[#888899] text-[15px] md:text-sm">
+            © {new Date().getFullYear()} WeDist. All rights reserved.
+          </p>
           <div className="flex gap-6">
             <Link
               href="https://www.termsfeed.com/live/192be16e-a89c-4fb8-9244-973661a0d516"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-    text-[#888899]
-    hover:text-[#f5b800]
-    text-[15px]
-    lg:text-base
-    transition-colors
-  "
+              className="text-[#888899] hover:text-[#f5b800] text-[15px] md:text-sm transition-colors"
             >
               Privacy Policy
             </Link>
-            {/* <Link href="#" className="
-text-[#888899]
-hover:text-[#f5b800]
-text-[15px]
-lg:text-base
-transition-colors
-">
-              Terms of Service
-            </Link> */}
           </div>
         </div>
       </div>

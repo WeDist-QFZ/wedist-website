@@ -9,19 +9,19 @@ export const brands = [
     products: [
       {
         id: "srxp4-2v10-ebt-ir",
-        name: "SRXP4-2V10-EBT-IR",
+        name: "Sarix Professional 4 Series Bullet",
         description:
-          "2MP Sarix Pro 4 Environmental IR Bullet Camera with 3.4-10.5mm lens, IP66/IP67 rated, WDR, 50m IR range, Pelco Smart Analytics",
+          "2-8MP environmental IR bullet camera featuring 2.8-11mm or 4.4-10.5mm varifocal lens, IP66/IP67 weatherproofing, IK10 impact protection, WDR, 50-80m IR range, and AI-powered Pelco Smart Analytics.",
         image: "/images/motorola-solutions/srxp4-2v10-ebt-ir.png",
-        datasheet: "https://www.pelco.com/fs/documents/pelco-sarix-pro-4-specification-sheet-en.pdf",
+        datasheet: "https://drive.google.com/file/d/1qD1meEKVafvSa5qfgrWokevH7kcVQTrK/view?usp=sharing",
       },
       {
         id: "srxp4-2v10-emd-ir",
-        name: "SRXP4-2V10-EMD-IR",
+        name: "Sarix Professional 4 Series Dome",
         description:
-          "2MP Sarix Pro 4 Environmental IR Dome Camera with 3.4-10.5mm lens, IP66/IP67 rated, WDR, 40m IR range, Pelco Smart Analytics",
+          "2-8MP environmental IR dome camera featuring 3.4-10.5mm varifocal lens, IP66/IP67 weatherproofing, IK10 impact protection, WDR, 40-50m IR range, and AI-powered Pelco Smart Analytics.",
         image: "/images/motorola-solutions/srxp4-2v10-emd-ir.png",
-        datasheet: "https://www.pelco.com/fs/documents/pelco-sarix-pro-4-specification-sheet-en.pdf",
+        datasheet: "https://drive.google.com/file/d/1qD1meEKVafvSa5qfgrWokevH7kcVQTrK/view?usp=sharing",
       },
     ],
   },
@@ -34,20 +34,20 @@ export const brands = [
     accentColor: "#a61c1c",
     products: [
       {
-        id: "dgf-en1008-v7",
-        name: "DGF-EN1008-V7",
+        id: "dgf-en",
+        name: "Digifort Enterprise",
         description:
-          "Digifort Enterprise Base Server V7, unlimited cameras, multi-user, advanced event management, H.264/H.265/MJPEG codecs",
+          "The ultimate high-tier VMS platform offering unlimited camera scalability",
         image: "/images/digifort/digifort-enterprise.png",
-        datasheet: "http://www.emacs.es/media/pdf/DGF-EN1008-V7.pdf",
+        datasheet: "https://drive.google.com/file/d/1_fIRVRCFIHPqI4AzY4proos9dtg4CTrb/view?usp=sharing",
       },
       {
-        id: "dgf-fe1008-v7",
-        name: "DGF-FE1008-V7",
+        id: "dgf-pr",
+        name: "Digifort Professional",
         description:
-          "Digifort Fail Over Base Server V7, redundancy support, automatic failback, seamless video continuity",
-        image: "/images/digifort/digifort-enterprise.png",
-        datasheet: "http://www.emacs.es/media/pdf/DGF-FE1008-V7.pdf",
+          "A comprehensive VMS solution for medium-to-large installations",
+        image: "/images/digifort/digifort-professional.png",
+        datasheet: "https://drive.google.com/file/d/1YtzpjT1HwxIta3NtsdInx8BXdUHLdNJM/view?usp=sharing",
       },
     ],
   },
@@ -117,7 +117,7 @@ export const brands = [
         description:
           "Dual-Controller 4U 24-Bay SAN System, Intel 4-Core, 2x8GB DDR4 ECC RAM, redundant power/fans, 4x10GbE SFP+ iSCSI, 4 optional host card slots",
         image: "/images/qsan/xs3324d-24bay.jpeg",
-        datasheet: "https://www.qsan.com/data/dl_files/qs_ds_XS3324_(en).pdf",
+        datasheet: "https://drive.google.com/file/d/1ap8FGmD_hWiF3FQAlItOqppL2B0CJ8rE/view?usp=sharing",
       },
       {
         id: "xs3324d-12bay",
@@ -125,7 +125,7 @@ export const brands = [
         description:
           "Dual-Controller 4U 12-Bay SAN System, Intel 4-Core, 2x8GB DDR4 ECC RAM, redundant power/fans, 4x10GbE SFP+ iSCSI, 4 optional host card slots",
         image: "/images/qsan/xs3324d-12bay.png",
-        datasheet: "https://www.qsan.com/data/dl_files/qs_ds_XS3312_(en).pdf",
+        datasheet: "https://drive.google.com/file/d/1ap8FGmD_hWiF3FQAlItOqppL2B0CJ8rE/view?usp=sharing",
       },
     ],
   },
@@ -163,24 +163,36 @@ export const brands = [
     logo: "/images/biomax.png",
     tagline: "Maximum Biometrics, Maximum Security",
     accentColor: "#7cc242",
-    products: [
-      {
-        id: "biomax-n-e90-pro",
-        name: "BioMax N-E90 Pro",
-        description:
-          'Fingerprint & RFID time attendance/access control, 10K finger/card capacity, 1.5M log capacity, 2.4" display, Linux OS, Wi-Fi/TCP-IP connectivity',
-        image: "/biomax-n-e90-pro-device.jpg",
-        datasheet: "https://www.biomaxsecurity.com/n-e90-pro-b",
-      },
-      {
-        id: "biomax-smart-office-suite",
-        name: "Smart Office Suite Software",
-        description:
-          "Web and Desktop attendance/access management software for BioMax devices, supports up to 2 devices & 200 users, comprehensive reporting",
-        image: "/biomax-smart-office-software.jpg",
-        datasheet: "https://www.biomaxsecurity.com/fingerprint-time-attendance/fingerprint-n-e90",
-      },
-    ],
+    "products": [
+    {
+      "id": "biomax-n-bm22",
+      "name": "BioMax N-BM22",
+      "description": "Fingerprint & card time attendance system, 10K finger/card capacity, 200K log capacity, Linux based OS, Wi-Fi/TCP-IP connectivity, and built-in door access control relay.",
+      "image": "/images/biomax/nbm22.png",
+      "datasheet": "https://drive.google.com/file/d/1_TaNAgV_0sgBNeFlisuS_8efOehckTt-/view?usp=sharing"
+    },
+    {
+      "id": "biomax-n-bioaccess",
+      "name": "BioMax N-Bioaccess",
+      "description": "Basic standalone fingerprint time attendance and access control terminal designed for cost-effective secure enterprise entry management.",
+      "image": "/images/biomax/nbioaccess.png",
+      "datasheet": "https://drive.google.com/file/d/1V5QT8_LTdGK8axP-F6xY1j0B8fYLN6lX/view?usp=sharing"
+    },
+    {
+      "id": "biomax-access10",
+      "name": "BioMax Access10",
+      "description": "Offline standalone fingerprint access control system, 500 finger/card capacity, built-in relay door control, and a compact black-white LCD screen.",
+      "image": "/images/biomax/access10.png",
+      "datasheet": "https://drive.google.com/file/d/1Pp-aMXDquFLUgMZ1Qp0uEy9yXqaeIIeh/view?usp=sharing"
+    },
+    {
+      "id": "biomax-flg22",
+      "name": "BioMax FLG22",
+      "description": "Smart fingerprint lock for frameless or framed glass doors, 100 user capacity, features a 1.77\" TN color screen, voice instruction, and wireless remote verification.",
+      "image": "/images/biomax/flg22.png",
+      "datasheet": "https://drive.google.com/file/d/1H2zRlEm7DnyDY8EUV1m46LOSQ7RnNAT2/view?usp=sharing"
+    }
+  ],
   },
   {
     id: "dorlet",
