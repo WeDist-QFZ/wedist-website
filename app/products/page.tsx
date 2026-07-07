@@ -50,7 +50,8 @@ export default function ProductsPage() {
                   </span>
                 </div>
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-[#f0f0f5] mb-3 md:mb-4">
-                  Authorized Distributor in Qatar for Leading Security, Networking, and Storage Brands
+                  Our{" "}
+                  <GlitchText text="Products" className="text-[#f5b800] text-glow" autoGlitch glitchInterval={7000} />
                 </h1>
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#888899] leading-relaxed px-1">
                   WeDist is the trusted distributor in Qatar for Digifort, Motorola Solutions, Antaira, Zyxel, QSAN,

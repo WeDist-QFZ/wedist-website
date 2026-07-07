@@ -343,14 +343,14 @@ export const partners = [
 ]
 
 export const events = [
-  {
-    id: 1,
-    title: "Zyxel Webinar on HoReCa",
-    date: "December 22, 2025",
-    location: "Zoho Webinar",
-    description:
-      "WeDist in association with Zyxel Networks, invites you to a webinar on high-performance WiFi solutions for the hospitality industry",
-  },
+{
+  id: 1,
+  title: "WeDist 5th Anniversary Celebration",
+  date: "August 9, 2026",
+  location: "WeDist Headquarters",
+  description:
+    "Join us as we celebrate WeDist's 5th Anniversary, marking five years of innovation, partnerships, and growth with our valued customers, partners, and team.",
+},
 ]
 
 export const downloads = [

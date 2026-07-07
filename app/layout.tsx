@@ -26,6 +26,8 @@ export const metadata: Metadata = {
     "data storage distributor in Qatar",
     "Digifort distributor in Qatar",
     "Motorola Solutions distributor in Qatar",
+    "Pelco distributor in Qatar",
+    "Avigilon distributor in Qatar",
     "Antaira distributor in Qatar",
     "Zyxel distributor in Qatar",
     "QSAN distributor in Qatar",
