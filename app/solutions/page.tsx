@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import type React from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -24,6 +25,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function SolutionsPage() {
   const [contactOpen, setContactOpen] = useState(false)
+  const router = useRouter()
   return (
     <div className="min-h-screen bg-[#0a0a0f] page-transition">
       <Header />
@@ -136,7 +138,7 @@ export default function SolutionsPage() {
                 Our team of experts can help design a tailored solution that perfectly fits your business requirements.
               </p>
               <button
-                onClick={() => setContactOpen(true)}
+                onClick={() => router.push('/contact')}
                 className="inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 bg-[#f5b800] text-[#0a0a0f] rounded-xl font-bold text-base md:text-xl hover:bg-[#c49400] transition-colors glow-yellow"
               >
                 Get in Touch

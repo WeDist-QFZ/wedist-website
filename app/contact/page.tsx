@@ -242,7 +242,7 @@ export default function ContactPage() {
                         <Input
                           required
                           name="name"
-                          placeholder="Gustavo Fring"
+                          placeholder="Saul Goodman"
                           value={formData.name}
                           onChange={(e) =>
                             setFormData({
@@ -261,7 +261,7 @@ export default function ContactPage() {
                           required
                           type="email"
                           name="email"
-                          placeholder="g.fring@lph-corp.com"
+                          placeholder="contact@saulgoodman.com"
                           value={formData.email}
                           onChange={(e) =>
                             setFormData({
@@ -281,7 +281,7 @@ export default function ContactPage() {
                         <Input
                           name="phone"
                           type="tel"
-                          placeholder="+15051460195"
+                          placeholder="+15055034455"
                           value={formData.phone}
                           onChange={(e) =>
                             setFormData({
@@ -298,7 +298,7 @@ export default function ContactPage() {
 
                         <Input
                           name="company"
-                          placeholder="Los Pollos Hermanos"
+                          placeholder="Saul Goodman & Associates"
                           value={formData.company}
                           onChange={(e) =>
                             setFormData({
@@ -316,7 +316,7 @@ export default function ContactPage() {
                       <Textarea
                         required
                         name="message"
-                        placeholder="I am reaching out on behalf of a friend who accidentally misplaced a giant magnet near our server room. Please advise on data recovery. again, ASKING FOR A FRIEND."
+                        placeholder="Hypothetically speaking, a 'friend' had a little accident with a giant magnet near a server room—help me legally resurrect these hard drives before the IT feds find out!"
                         value={formData.message}
                         onChange={(e) =>
                           setFormData({
@@ -345,8 +345,7 @@ export default function ContactPage() {
                       )}
 
                       <p className="text-xs text-[#888899] text-center">
-                        * Required fields — we typically respond within one
-                        business day.
+                        * Required fields [Better call s̶a̶u̶l Us!]
                       </p>
                     </div>
                   </form>

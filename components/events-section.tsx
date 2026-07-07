@@ -40,13 +40,13 @@ export function EventsSection() {
                 Workshops
               </p>
             </div>
-            <Button
+            {/* <Button
               variant="link"
               className="text-[#f5b800] hover:text-[#c49400] mt-4 md:mt-0 group text-base md:text-lg self-start md:self-auto"
             >
               View All Events
               <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-2 transition-transform" />
-            </Button>
+            </Button> */}
           </div>
         </ScrollReveal>
 
@@ -69,11 +69,11 @@ export function EventsSection() {
                         <Calendar className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
                         <span className="text-sm md:text-base font-medium whitespace-nowrap">{event.date}</span>
                       </div>
-                      {index === 0 && (
+                      {/* {index === 0 && (
                         <span className="px-2 md:px-3 py-1 bg-[#f5b800] text-[#0a0a0f] text-[10px] md:text-xs font-bold rounded-full animate-pulse glow-yellow whitespace-nowrap">
                           UPCOMING
                         </span>
-                      )}
+                      )} */}
                     </div>
 
                     <h3 className="text-xl md:text-2xl font-semibold text-[#f0f0f5] mb-3 md:mb-4 group-hover:text-[#f5b800] transition-colors relative z-10 line-clamp-2 min-h-[56px] md:min-h-[64px]">
@@ -91,7 +91,7 @@ export function EventsSection() {
                       </div>
                       <div className="flex items-center gap-1.5 md:gap-2 text-[#888899] text-sm md:text-base">
                         <Clock className="w-4 h-4 md:w-5 md:h-5 text-[#f5b800] flex-shrink-0" />
-                        <span>2:00 PM</span>
+                        <span>{event.time}</span>
                       </div>
                     </div>
 

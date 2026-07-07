@@ -344,10 +344,11 @@ export const partners = [
 
 export const events = [
 {
-  id: 1,
+  id: 0,
   title: "WeDist 5th Anniversary Celebration",
   date: "August 9, 2026",
-  location: "WeDist Headquarters",
+  time: "all day",
+  location: "WeDist",
   description:
     "Join us as we celebrate WeDist's 5th Anniversary, marking five years of innovation, partnerships, and growth with our valued customers, partners, and team.",
 },
