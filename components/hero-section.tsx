@@ -111,9 +111,9 @@ export function HeroSection() {
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Your trusted technology distribution partner, connecting businesses with{" "}
-            <span className="text-[#f5b800] text-glow-sm">cutting-edge solutions</span>{" "}
-            from world-leading brands.
+            WeDist is the trusted distributor in Qatar for{" "}
+            <span className="text-[#f5b800] text-glow-sm">Digifort, Motorola Solutions, Antaira, Zyxel, QSAN, Western Digital, BioMax, Dorlet, Promise Technology, and eSSL</span>
+            , delivering video surveillance, access control, networking, and data storage solutions to businesses across Qatar.
           </p>
 
           {/* CTA */}

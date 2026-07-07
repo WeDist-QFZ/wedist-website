@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Main sitemap
+Sitemap: https://wedist.net/sitemap.xml
+
+# Disallow admin or private areas if they ever appear
+Disallow: /api/
+Disallow: /_next/

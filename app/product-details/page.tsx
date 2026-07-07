@@ -1,4 +1,5 @@
-import type { Metadata } from "next"
+"use client"
+
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { brands } from "@/lib/data"
@@ -12,12 +13,6 @@ import { GlitchText } from "@/components/glitch-text"
 import { FloatingElements } from "@/components/floating-elements"
 import { AnimatedGrid } from "@/components/animated-grid"
 import { HologramCard } from "@/components/hologram-card"
-
-export const metadata: Metadata = {
-  title: "Products | WeDist Qatar | Authorized Distributor for Leading Brands",
-  description:
-    "WeDist is the authorized distributor in Qatar for Digifort, Motorola Solutions, Antaira, Zyxel, QSAN, Western Digital, BioMax, Dorlet, Promise Technology, and eSSL.",
-}
 
 export default function ProductsPage() {
   return (
@@ -50,12 +45,12 @@ export default function ProductsPage() {
                   </span>
                 </div>
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold text-[#f0f0f5] mb-3 md:mb-4">
-                  Authorized Distributor in Qatar for Leading Security, Networking, and Storage Brands
+                  Our{" "}
+                  <GlitchText text="Products" className="text-[#f5b800] text-glow" autoGlitch glitchInterval={7000} />
                 </h1>
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#888899] leading-relaxed px-1">
-                  WeDist is the trusted distributor in Qatar for Digifort, Motorola Solutions, Antaira, Zyxel, QSAN,
-                  Western Digital, BioMax, Dorlet, Promise Technology, and eSSL. Explore our portfolio of video
-                  surveillance, access control, networking, and data storage solutions.
+                  Explore our comprehensive portfolio of technology solutions from world-leading brands. Click on any
+                  brand to discover their complete product lineup.
                 </p>
               </div>
             </ScrollReveal>

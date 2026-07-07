@@ -1,5 +1,4 @@
-"use client"
-
+import type { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Target, Eye, Users, Award, Globe, Handshake, Sparkles, Heart } from "lucide-react"
@@ -10,6 +9,12 @@ import { GlitchText } from "@/components/glitch-text"
 import { AnimatedCounter } from "@/components/animated-counter"
 import Image from "next/image"
 import { HologramCard } from "@/components/hologram-card"
+
+export const metadata: Metadata = {
+  title: "About WeDist Qatar | Technology Distributor for Leading Brands",
+  description:
+    "WeDist is a trusted technology distributor in Qatar, supporting customers with authorized solutions for security, networking, and storage brands.",
+}
 
 export default function AboutPage() {
   return (
