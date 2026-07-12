@@ -125,15 +125,15 @@ export default function AboutPage() {
               <div className="text-center mb-10 md:mb-16">
                 <div className="flex justify-center mb-6 md:mb-8">
   <Image
-    src="/images/weappreciate.png"
+    src="/images/weappreciate2.png"
     alt="WeAppreciate Logo"
     width={300}
     height={80}
     className="w-[200px] md:w-[400px] h-auto"
-    style={{
-      filter:
-        "drop-shadow(1px 0 white) drop-shadow(-1px 0 white) drop-shadow(0 1px white) drop-shadow(0 -1px white)",
-    }}
+    // style={{
+    //   filter:
+    //     "drop-shadow(1px 0 white) drop-shadow(-1px 0 white) drop-shadow(0 1px white) drop-shadow(0 -1px white)",
+    // }}
   />
 </div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#f0f0f5] mb-4">

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Mail, Phone, MapPin } from "lucide-react"
+import { solutions } from "@/lib/data"
 
 function LinkedInIcon({ className }: { className?: string }) {
   return (
@@ -157,17 +158,17 @@ export function Footer() {
               </div>
 
               <ul className="space-y-3 md:space-y-2">
-                {["Video Surveillance", "Access Control", "Data Storage", "Enterprise Networking"].map((item) => (
-                  <li key={item}>
-                    <Link
-                      href="/solutions"
-                      className="text-[#888899] hover:text-[#f5b800] text-[15px] md:text-sm transition-colors"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+  {solutions.map((solution) => (
+    <li key={solution.id}>
+      <Link
+        href="/solutions"
+        className="text-[#888899] hover:text-[#f5b800] text-[15px] md:text-sm transition-colors"
+      >
+        {solution.title}
+      </Link>
+    </li>
+  ))}
+</ul>
             </div>
           </div>
 

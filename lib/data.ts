@@ -409,14 +409,22 @@ export const solutions = [
     id: "enterprise-networking",
     title: "Enterprise Networking",
     description: "Complete networking infrastructure for modern enterprises with industrial-grade reliability",
-    brands: ["Zyxel Networks", "Antaira", "QSAN"],
+    brands: ["Zyxel Networks", "Antaira"],
     icon: "network",
   },
   {
-    id: "video-surveillance",
-    title: "Video Surveillance",
-    description: "Comprehensive video security solutions from capture to storage and analytics",
-    brands: ["Motorola Solutions", "Digifort", "Promise Technology"],
+    id: "smart-surveillance",
+    title: "Smart Surveillance & Analytics",
+    description:
+      "AI-powered video surveillance, intelligent analytics, smart sensing, and centralized security management for modern enterprises",
+    brands: [
+      "Motorola Solutions",
+      "HALO",
+      "Pelco",
+      "Avigilon Unity",
+      "Intellexvision",
+      "Digifort",
+    ],
     icon: "camera",
   },
   {
