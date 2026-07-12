@@ -8,6 +8,14 @@ export const brands = [
     accentColor: "#ffffff",
     products: [
       {
+        id: "halo-3c-pc",
+        name: "HALO 3C-PC Smart Sensor",
+        description:
+          "Privacy-safe smart sensor for real-time health, safety, and environmental monitoring, featuring vape and THC detection, air quality monitoring, abnormal noise and aggression detection, gunshot recognition, emergency keyword alerts, and seamless integration with leading security and building management platforms.",
+        image: "/images/motorola-solutions/halo.png",
+        datasheet: "https://drive.google.com/file/d/1E8besCQ6bMAbcRiDJgtYBXCJOvDaCVuB/view?usp=sharing",
+      },
+      {
         id: "srxp4-2v10-ebt-ir",
         name: "Sarix Professional 4 Series Bullet",
         description:
@@ -65,7 +73,7 @@ export const brands = [
         description:
           "Compact Industrial Gigabit PoE+ Media Converter, 1x10/100/1000Tx to 1x100/1000 SFP, 30W PSE, -40 to 75°C operating",
         image: "/images/antaira/imp-c1000-sfp.jpg",
-        datasheet: "https://www.antaira.com/core/media/media.nl?id=989212&c=685553&h=HljvuV2xHAdKosXL0StIAVNEDhdDxiXrwaO1Z4d-i6g84HQI&_xt=.pdf",
+        datasheet: "https://drive.google.com/file/d/1DqoJEGlAn6hcPfv5dbwsqjZ9iAG3FIb7/view?usp=drive_link",
       },
       {
         id: "lmp-1002g-sfp-t",
@@ -73,7 +81,31 @@ export const brands = [
         description:
           "10-Port Industrial PoE+ Layer 3 Managed Switch, 8x10/100/1000Tx (30W/port) + 2x100/1000 SFP, -40~75°C, 48~55VDC",
         image: "/images/antaira/lmp-1002g-sfp-t.jpg",
-        datasheet: "https://www.antaira.com/core/media/media.nl?id=2055358&c=685553&h=WcbLNBBD7ISfWzb1lzlLTNei4pkOLnSPGKhb3qzKnjPUI4eo&_xt=.pdf",
+        datasheet: "https://drive.google.com/file/d/1YgSqov_1Wwxd13XXXiIYkxc8kPFh1S9S/view?usp=drive_link",
+      },
+      {
+        id: "lmp-1600g-sfp-t",
+        name: "LMP-1600G-SFP-T",
+        description:
+          "16-Port Industrial Gigabit PoE+ Light Layer 3 Managed Ethernet Switch, w/16*10/100/1000Tx (30W/port); 48~55VDC Power Input",
+        image: "/images/antaira/lmp-1600g-sfp-t.jpg",
+        datasheet: "https://drive.google.com/file/d/1n9XdGrHraXM7JdB29quEiyy0gAt55Q6y/view?usp=drive_link",
+      },
+      {
+        id: "lmp-2804g-4xs-24-t",
+        name: "LMP-2804G-4XS-24-T",
+        description:
+          "28-Port Industrial Layer 3 Managed Gigabit Ethernet PoE+ Switch- 24*10/100/1000T Gigabit Ethernet with IEEE 802.3at compliant PoE, 30W/port + 4*1G/2.5G/10G SFP+ Slots, 12~55VDC Power Input; EOT: -40~75C",
+        image: "/images/antaira/LMP-2804G-4XS-24_1.png",
+        datasheet: "https://drive.google.com/file/d/1788R36fFyWnefeO0qVhHSzpPmPxEqgAR/view?usp=drive_link",
+      },
+      {
+        id: "lmp-2602g-sfp",
+        name: "LMP-2602G-SFP",
+        description:
+          "26-Port Industrial PoE+ Gigabit Managed Ethernet Switch, w/24*10/100/1000Tx RJ45 (30W/Port) and 2*Gigabit Combo Ports (2*10/100/1000Tx RJ45 and 2*100/1000 SFP Slots)",
+        image: "/images/antaira/lmp-2602g.png",
+        datasheet: "https://drive.google.com/file/d/1788R36fFyWnefeO0qVhHSzpPmPxEqgAR/view?usp=drive_link",
       },
     ],
   },
@@ -86,21 +118,75 @@ export const brands = [
     accentColor: "#6cc24a",
     products: [
       {
-        id: "gs1920-24hpv2-eu0101f",
-        name: "GS1920-24HPv2-EU0101F",
-        description:
-          "Zyxel GS1920-24HPv2, 28-Port Smart Managed PoE Switch, 24x GbE PoE (375W) + 4x GbE dual, standalone or NebulaFlex Cloud",
-        image: "/zyxel-managed-poe-switch.jpg",
-        datasheet: "https://www.wifi-france.com/datasheets/Zyxel/GS1920-24v2_5.pdf",
+        "id": "gs1920",
+        "name": "GS1920",
+        "description": "8/24/48-port GbE Smart Managed Switch Series - Layer 2 smart managed Gigabit switch options with Gigabit RJ-45 copper ports and dedicated or combo SFP uplink ports, supporting NebulaFlex cloud management",
+        "image": "/images/zyxel/gs1920.jpg",
+        "datasheet": "https://drive.google.com/file/d/1ZEq-fk_ALNxPN_Tnk8hWtGMOeXyU_iU0/view?usp=drive_link"
       },
       {
-        id: "nwa50ax-eu0102f",
-        name: "NWA50AX-EU0102F",
-        description:
-          "Zyxel NWA50AX, Wi-Fi 6 Standalone/NebulaFlex Access Point, 802.11ax, single pack with power adaptor, EU/UK variant",
-        image: "/zyxel-wifi6-access-point.jpg",
-        datasheet: "/datasheets/nwa50ax-eu0102f.pdf",
+        "id": "gs1350",
+        "name": "GS1350",
+        "description": "5/8/16/24-port Smart Managed Switch For Surveillance - Dedicated L2 smart managed PoE switches featuring high power budgets, extended-range PoE topology up to 250m, Auto Camera Recovery, and 2-layer surge protection",
+        "image": "/images/zyxel/gs1350.png",
+        "datasheet": "https://drive.google.com/file/d/1mSjM2YhjsYlqbhx0KhlBBS9peJPRcF5t/view?usp=drive_link"
       },
+      {
+        "id": "gs1900",
+        "name": "GS1900",
+        "description": "8/10/16/24/48-port GbE Smart Managed Switch Series - Essential Layer 2 smart web-managed Gigabit ethernet switch infrastructure with full IPv6 support, fanless design configurations, and IEEE 802.3at PoE+",
+        "image": "/images/zyxel/gs1900.jpg",
+        "datasheet": "https://drive.google.com/file/d/1_OSu_CdKcGSz4-_nCMWyXf8oD3XXeik7/view?usp=drive_link"
+      },
+      {
+        "id": "xgs4600",
+        "name": "XGS4600",
+        "description": "28/52-port GbE Layer 3 Aggregation Switch Series - High-density enterprise L3 switches with up to 48 Gigabit SFP or copper ports, 4 built-in 10G SFP+ uplink slots, active-standby dual power hardware resiliency, and physical stacking capabilities",
+        "image": "/images/zyxel/xgs4600.jpg",
+        "datasheet": "https://drive.google.com/file/d/1k9E2wqC2kblAwjEGfq4DpJFyhb5GIx1H/view?usp=drive_link"
+      },
+      {
+        "id": "gs2220",
+        "name": "GS2220",
+        "description": "10/28/50-port GbE Layer 2+ Managed Switch Series - Advanced L2+ Gigabit access switches featuring IGMP snooping, L2 multicast, robust network security policies, and flexible standalone or Nebula cloud management",
+        "image": "/images/zyxel/gs2220.jpg",
+        "datasheet": "https://drive.google.com/file/d/1cGYJCR1MffJ88NIoFCK4Rm4cJCfkUjGG/view?usp=drive_link"
+      },
+      {
+        "id": "xgs2220",
+        "name": "XGS2220",
+        "description": "24/48-port GbE Layer 3 Access Switch Series - L3 static routing network access switches featuring Multi-Gigabit (1G/2.5G/5G/10G) RJ-45 options, IEEE 802.3bt PoE++ up to 60W per port, and up to 6 built-in 10G SFP+ uplink slots",
+        "image": "/images/zyxel/xgs2220.jpg",
+        "datasheet": "https://drive.google.com/file/d/18RJR3z5KbumLxiUFQl6aSxl7IUjWSqCr/view?usp=drive_link"
+      },
+      {
+        "id": "nwa50ax",
+        "name": "NWA50AX",
+        "description": "AX1800 4-Stream WiFi 6 Dual-Radio NebulaFlex Access Point - Dual-radio (2x2 in 2.4GHz and 5GHz) 802.11ax wireless AP delivering up to 1.77 Gbps, featuring 1*10/100/1000M RJ-45 uplink port with PoE support",
+        "image": "/images/zyxel/nwa50ax.jpg",
+        "datasheet": "https://drive.google.com/file/d/1-saeRoJhZpX9yA0kehxfeE-T3FkMQtLV/view?usp=drive_link"
+      },
+      {
+        "id": "wbe510d",
+        "name": "WBE510D",
+        "description": "BE6500 4-Stream WiFi 7 Dual-Radio NebulaFlex Pro Access Point - enterprise-grade dual-band 802.11be wireless AP supporting speeds up to 6.5Gbps, Multi-Link Operation (MLO), and dual-optimized smart antenna patterns",
+        "image": "/images/zyxel/wbe510d.jpg",
+        "datasheet": "https://drive.google.com/file/d/1jun7EeA8lGFjOVcm-88pRjh7ZgmcC7YC/view?usp=drive_link"
+      },
+      {
+        "id": "wbe630s",
+        "name": "WBE630S",
+        "description": "BE12300 6-Stream WiFi 7 Dual-Radio NebulaFlex Pro Access Point - high-performance tri-band 802.11be enterprise AP with BandFlex radio versatility, delivering aggregate speeds up to 12.3Gbps and 2.5G Multi-Gig uplink connectivity",
+        "image": "/images/zyxel/wbe630s.jpg",
+        "datasheet": "https://drive.google.com/file/d/18a_myli3pOkgUEJn8OUpHV2FSv3VGHky/view?usp=drive_link"
+      },
+      {
+        "id": "wbe660s",
+        "name": "WBE660S",
+        "description": "BE22000 12-Stream WiFi 7 Triple-Radio NebulaFlex Pro Access Point - Flagship tri-band (2.4GHz, 5GHz, 6GHz) 802.11be AP pulling speeds up to 22Gbps via 4x4 spatial streams, utilizing a dedicated 10G Multi-Gigabit LAN port",
+        "image": "/images/zyxel/wbe660s.jpg",
+        "datasheet": "https://drive.google.com/file/d/18ArKH73v2BKHbx6VipvBXM7ZG4Ww5TSO/view?usp=drive_link"
+      }
     ],
   },
   {
@@ -164,35 +250,35 @@ export const brands = [
     tagline: "Maximum Biometrics, Maximum Security",
     accentColor: "#7cc242",
     "products": [
-    {
-      "id": "biomax-n-bm22",
-      "name": "BioMax N-BM22",
-      "description": "Fingerprint & card time attendance system, 10K finger/card capacity, 200K log capacity, Linux based OS, Wi-Fi/TCP-IP connectivity, and built-in door access control relay.",
-      "image": "/images/biomax/nbm22.png",
-      "datasheet": "https://drive.google.com/file/d/1_TaNAgV_0sgBNeFlisuS_8efOehckTt-/view?usp=sharing"
-    },
-    {
-      "id": "biomax-n-bioaccess",
-      "name": "BioMax N-Bioaccess",
-      "description": "Basic standalone fingerprint time attendance and access control terminal designed for cost-effective secure enterprise entry management.",
-      "image": "/images/biomax/nbioaccess.png",
-      "datasheet": "https://drive.google.com/file/d/1V5QT8_LTdGK8axP-F6xY1j0B8fYLN6lX/view?usp=sharing"
-    },
-    {
-      "id": "biomax-access10",
-      "name": "BioMax Access10",
-      "description": "Offline standalone fingerprint access control system, 500 finger/card capacity, built-in relay door control, and a compact black-white LCD screen.",
-      "image": "/images/biomax/access10.png",
-      "datasheet": "https://drive.google.com/file/d/1Pp-aMXDquFLUgMZ1Qp0uEy9yXqaeIIeh/view?usp=sharing"
-    },
-    {
-      "id": "biomax-flg22",
-      "name": "BioMax FLG22",
-      "description": "Smart fingerprint lock for frameless or framed glass doors, 100 user capacity, features a 1.77\" TN color screen, voice instruction, and wireless remote verification.",
-      "image": "/images/biomax/flg22.png",
-      "datasheet": "https://drive.google.com/file/d/1H2zRlEm7DnyDY8EUV1m46LOSQ7RnNAT2/view?usp=sharing"
-    }
-  ],
+      {
+        "id": "biomax-n-bm22",
+        "name": "BioMax N-BM22",
+        "description": "Fingerprint & card time attendance system, 10K finger/card capacity, 200K log capacity, Linux based OS, Wi-Fi/TCP-IP connectivity, and built-in door access control relay.",
+        "image": "/images/biomax/nbm22.png",
+        "datasheet": "https://drive.google.com/file/d/1_TaNAgV_0sgBNeFlisuS_8efOehckTt-/view?usp=sharing"
+      },
+      {
+        "id": "biomax-n-bioaccess",
+        "name": "BioMax N-Bioaccess",
+        "description": "Basic standalone fingerprint time attendance and access control terminal designed for cost-effective secure enterprise entry management.",
+        "image": "/images/biomax/nbioaccess.png",
+        "datasheet": "https://drive.google.com/file/d/1V5QT8_LTdGK8axP-F6xY1j0B8fYLN6lX/view?usp=sharing"
+      },
+      {
+        "id": "biomax-access10",
+        "name": "BioMax Access10",
+        "description": "Offline standalone fingerprint access control system, 500 finger/card capacity, built-in relay door control, and a compact black-white LCD screen.",
+        "image": "/images/biomax/access10.png",
+        "datasheet": "https://drive.google.com/file/d/1Pp-aMXDquFLUgMZ1Qp0uEy9yXqaeIIeh/view?usp=sharing"
+      },
+      {
+        "id": "biomax-flg22",
+        "name": "BioMax FLG22",
+        "description": "Smart fingerprint lock for frameless or framed glass doors, 100 user capacity, features a 1.77\" TN color screen, voice instruction, and wireless remote verification.",
+        "image": "/images/biomax/flg22.png",
+        "datasheet": "https://drive.google.com/file/d/1H2zRlEm7DnyDY8EUV1m46LOSQ7RnNAT2/view?usp=sharing"
+      }
+    ],
   },
   {
     id: "dorlet",
@@ -203,20 +289,26 @@ export const brands = [
     accentColor: "#1e4d8c",
     products: [
       {
-        id: "dorlet-d1221000",
-        name: "D1221000",
-        description:
-          "Advanced full IP access controller & attendance for up to 2 readers/2 doors, includes alarms/intrusion panel, enclosure & power supply",
-        image: "/dorlet-d1221000-controller.jpg",
-        datasheet: "https://www.dorlet.com/en/products/access-control-and-intrusion/asdx/asd2-controller",
+        id: "d1241000",
+        name: "Dorlet D1241000 Controller",
+        description: "Advanced full IP access controller and attendance panel supporting up to 4 readers and 4 doors. Includes full IP alarms and intrusion capabilities, certified to EN-60839 Grade 4 for access control, and comes complete with enclosure and power supply.",
+        image: "/images/dorlet/d1241000.jpg",
+        datasheet: "https://drive.google.com/file/d/1VQauCKHCvLAAKjLhLgMITtvUn8--bEjS/view?usp=drive_link",
+
       },
       {
-        id: "dorlet-14361000",
-        name: "Dorlet 14361000",
-        description:
-          "Mural MIFARE R/W Proximity Card Reader (Black), ISO14443A 13.56MHz, read/write capability, suitable for indoor/outdoor installations",
-        image: "/dorlet-mifare-reader-black.jpg",
-        datasheet: "https://store.emacs.es/products/14361000",
+        id: "d1221000",
+        name: "Dorlet D1221000 Controller",
+        description: "Advanced full IP access controller and attendance panel supporting up to 2 readers and 2 doors. Features full IP alarms and intrusion panel capabilities, and comes complete with enclosure and power supply.",
+        image: "/images/dorlet/d1221000.jpg",
+        datasheet: "https://drive.google.com/file/d/155cr7RNmDOGtsvwKCTekmhIEZA86cvCT/view?usp=drive_link",
+      },
+      {
+        id: "evopass20",
+        name: "Dorlet EVOpass® 20",
+        description: "Advanced multi-technology smart card reader engineered for modern access environments, offering elegant design, high-speed credential processing, and robust encryption protocols to safeguard data transmissions.",
+        image: "/images/dorlet/evopass20.png",
+        datasheet: "https://drive.google.com/file/d/1k6naRAjUGfue0qIz-bUCY9wb5qaK1Cx5/view?usp=drive_link",
       },
     ],
   },
@@ -229,19 +321,26 @@ export const brands = [
     accentColor: "#00bcd4",
     products: [
       {
-        id: "vess-a8600",
-        name: "Vess A8600",
-        description: "Video surveillance storage with AI-ready capabilities and edge analytics",
-        image: "/video-surveillance-storage-server.jpg",
-        datasheet: "/datasheets/vess-a8600.pdf",
+        id: "vess-r3600tis",
+        name: "Vess R3600tiS",
+        description: "Highly scalable, single-controller unified storage system optimized for small-to-medium business data applications and virtualized cloud networks.",
+        image: "/images/promise/r3600.jpg",
+        datasheet: "https://drive.google.com/file/d/1pJ_TUcwCnFMLz3sdOrPUmSWsRQiwfAcH/view?usp=drive_link"
       },
       {
-        id: "vtrak-n1616",
-        name: "VTrak N1616",
-        description: "High-density NAS with 16 bays for media and content production workflows",
-        image: "/high-density-nas-storage-system.jpg",
-        datasheet: "/datasheets/vtrak-n1616.pdf",
+        id: "vess-r3600tid",
+        name: "Vess R3600tiD",
+        description: "High-availability, active-active dual-controller unified storage appliance designed for zero-downtime mission-critical IT and enterprise surveillance deployments.",
+        image: "/images/promise/r3600.jpg",
+        datasheet: "https://drive.google.com/file/d/1pJ_TUcwCnFMLz3sdOrPUmSWsRQiwfAcH/view?usp=drive_link"
       },
+      {
+        id: "vtrak-j5960",
+        name: "VTrak J5960",
+        description: "Ultra-dense, energy-efficient 4U 60-bay enterprise SAS JBOD expansion enclosure delivering massive capacity and up to 15GB/s bandwidth for heavy data center workloads.",
+        image: "/images/promise/j5960.jpg",
+        datasheet: "https://drive.google.com/file/d/1Gf0QiVKrc8TKHMOolE2quGhJg1NAZguI/view?usp=drive_link"
+      }
     ],
   },
   {
@@ -257,16 +356,16 @@ export const brands = [
         name: "ESSL AiFace Magnum",
         description:
           'Face & fingerprint biometric terminal, 1500 face/5000 finger/10K card capacity, 200K transactions, 2.4" touch screen, eSSLFace 3.5 algorithm, Linux OS',
-        image: "/essl-aiface-magnum-terminal.jpg",
-        datasheet: "https://www.esslsecurity.com/storage/app/media/face/Aiface-Magnum/Ai-face-Magnum.pdf",
+        image: "/images/essl/ai-face-magnum.png",
+        datasheet: "https://drive.google.com/file/d/1Boh2MP1v4FkGN1RD51L9HejahfIGQswF/view?usp=drive_link",
       },
       {
         id: "essl-aiface-pluto",
         name: "ESSL AiFace-Pluto",
         description:
           'Linux-based hybrid biometric access control & time attendance, visible light facial recognition, 4" touch screen, 1000 faces/1000 cards, 150K transactions, IP65 rated',
-        image: "/essl-aiface-pluto-terminal.jpg",
-        datasheet: "/datasheets/essl-aiface-pluto.pdf",
+        image: "/images/essl/AiFace-Pluto.png",
+        datasheet: "https://drive.google.com/file/d/154ae6X_BNfHIZp6WhcxKb0cDYc6EYDq-/view?usp=drive_link",
       },
     ],
   },
@@ -343,15 +442,15 @@ export const partners = [
 ]
 
 export const events = [
-{
-  id: 0,
-  title: "WeDist 5th Anniversary Celebration",
-  date: "August 9, 2026",
-  time: "all day",
-  location: "WeDist",
-  description:
-    "Join us as we celebrate WeDist's 5th Anniversary, marking five years of innovation, partnerships, and growth with our valued customers, partners, and team.",
-},
+  {
+    id: 0,
+    title: "WeDist 5th Anniversary Celebration",
+    date: "August 9, 2026",
+    time: "all day",
+    location: "WeDist",
+    description:
+      "Join us as we celebrate WeDist's 5th Anniversary, marking five years of innovation, partnerships, and growth with our valued customers, partners, and team.",
+  },
 ]
 
 export const downloads = [
