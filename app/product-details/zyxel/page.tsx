@@ -12,6 +12,7 @@ import { FloatingElements } from "@/components/floating-elements"
 import { DataStreamBg } from "@/components/data-stream-bg"
 import { ProductGrid } from "@/components/product-grid"
 import { getBrandById } from "@/lib/data"
+import { motion } from "framer-motion"
 
 export default function ZyxelPage() {
   const brand = getBrandById("zyxel")
@@ -101,16 +102,28 @@ export default function ZyxelPage() {
                         </div>
                       </div>
                     </div>
-                    {[0, 120, 240].map((angle, i) => (
-                      <div
-                        key={i}
-                        className="absolute top-1/2 left-1/2 w-8 h-8 rounded-full bg-[#6cc24a]/30 animate-float"
-                        style={{
-                          transform: `translate(-50%, -50%) rotate(${angle}deg) translateX(140px)`,
-                          animationDelay: `${i * 0.5}s`,
-                        }}
-                      />
-                    ))}
+                    {[0, 1, 2].map((i) => (
+  <motion.div
+    key={i}
+    className="absolute w-8 h-8 rounded-full bg-[#6cc24a]/30 shadow-[0_0_20px_#6cc24a]"
+    animate={{
+      x: [-140, 140, 140, -140, -140],
+      y: [-140, -140, 140, 140, -140],
+    }}
+    transition={{
+      duration: 6,
+      repeat: Infinity,
+      ease: "linear",
+      delay: i * 2,
+    }}
+    style={{
+      top: "50%",
+      left: "50%",
+      translateX: "-50%",
+      translateY: "-50%",
+    }}
+  />
+))}
                     <div className="absolute inset-0 scanlines opacity-20" />
                   </div>
                 </div>

@@ -70,9 +70,14 @@ export default function MotorolaSolutionsPage() {
                     />
                   </div>
 
-                  <h1 className="text-5xl md:text-7xl font-bold text-[#f0f0f5] mb-6">
-                    <GlitchText text={brand.name} className="text-white" autoGlitch glitchInterval={8000} />
-                  </h1>
+                  <h1 className="text-4xl md:text-6xl font-bold text-[#f0f0f5] mb-6 whitespace-nowrap">
+  <GlitchText 
+    text={brand.name} 
+    className="text-white" 
+    autoGlitch 
+    glitchInterval={8000} 
+  />
+</h1>
 
                   <p className="text-2xl md:text-3xl font-light text-[#888899] mb-8 tracking-wide">{brand.tagline}</p>
 
