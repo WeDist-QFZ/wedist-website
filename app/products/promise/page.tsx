@@ -64,7 +64,7 @@ export default function PromisePage() {
                     />
                   </div>
 
-                  <h1 className="text-5xl md:text-7xl font-bold text-[#f0f0f5] mb-6">
+                  <h1 className="text-3xl md:text-5xl font-bold text-[#f0f0f5] mb-6">
                     <GlitchText text={brand.name} className="text-[#00bcd4]" autoGlitch glitchInterval={8000} />
                   </h1>
 

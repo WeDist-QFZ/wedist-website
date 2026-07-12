@@ -2,9 +2,9 @@ export const brands = [
   {
     id: "motorola-solutions",
     name: "Motorola Solutions",
-    description: "Critical communications and video security solutions for enterprises and public safety",
+    description: "Advanced video security and analytics solutions for enterprises and public safety",
     logo: "/images/motorola-solutions.jpg",
-    tagline: "Connecting Those Who Protect",
+    tagline: "Solving for safer",
     accentColor: "#ffffff",
     products: [
       {
@@ -34,37 +34,11 @@ export const brands = [
     ],
   },
   {
-    id: "digifort",
-    name: "Digifort",
-    description: "Professional video management software for surveillance and security applications",
-    logo: "/images/digifort.jpg",
-    tagline: "Professional Video Management",
-    accentColor: "#a61c1c",
-    products: [
-      {
-        id: "dgf-en",
-        name: "Digifort Enterprise",
-        description:
-          "The ultimate high-tier VMS platform offering unlimited camera scalability",
-        image: "/images/digifort/digifort_enterprise.png",
-        datasheet: "https://drive.google.com/file/d/1_fIRVRCFIHPqI4AzY4proos9dtg4CTrb/view?usp=sharing",
-      },
-      {
-        id: "dgf-pr",
-        name: "Digifort Professional",
-        description:
-          "A comprehensive VMS solution for medium-to-large installations",
-        image: "/images/digifort/digifort_professional.png",
-        datasheet: "https://drive.google.com/file/d/1YtzpjT1HwxIta3NtsdInx8BXdUHLdNJM/view?usp=sharing",
-      },
-    ],
-  },
-  {
     id: "antaira",
     name: "Antaira",
     description: "Industrial networking and communication solutions for harsh environments",
     logo: "/images/antaira.jpg",
-    tagline: "Industrial Network Solutions",
+    tagline: "Making Connectivity Simple",
     accentColor: "#cc0000",
     products: [
       {
@@ -194,7 +168,7 @@ export const brands = [
     name: "QSAN",
     description: "Enterprise storage solutions with high performance SAN and NAS systems",
     logo: "/images/qsan.png",
-    tagline: "Enterprise Storage Excellence",
+    tagline: "Empower Infrastructure. Secure the Future.",
     accentColor: "#7dc832",
     products: [
       {
@@ -220,7 +194,7 @@ export const brands = [
     name: "Western Digital",
     description: "Data storage solutions including HDDs, SSDs, and enterprise storage systems",
     logo: "/images/western-digital.jpg",
-    tagline: "Data Makes It Possible",
+    tagline: "We drive certainty in the AI era.",
     accentColor: "#e91e8c",
     products: [
       {
@@ -240,6 +214,44 @@ export const brands = [
         datasheet:
           "https://drive.google.com/file/d/1y5OQcOQ4eaH9QwPCvHH6ywGMHlpxfhUV/view?usp=sharing",
       },
+    ],
+  },
+    {
+    id: "promise",
+    name: "Promise Technology",
+    description: "Enterprise storage, video surveillance, and cloud infrastructure solutions",
+    logo: "/images/Promise.jpg",
+    tagline: "It's all about your data.",
+    accentColor: "#00bcd4",
+    products: [
+      {
+        id: "vess-r3600tis",
+        name: "Vess R3600tiS",
+        description: "Highly scalable, single-controller unified storage system optimized for small-to-medium business data applications and virtualized cloud networks.",
+        image: "/images/promise/r3600.jpg",
+        datasheet: "https://drive.google.com/file/d/1pJ_TUcwCnFMLz3sdOrPUmSWsRQiwfAcH/view?usp=drive_link"
+      },
+      {
+        id: "vess-r3600tid",
+        name: "Vess R3600tiD",
+        description: "High-availability, active-active dual-controller unified storage appliance designed for zero-downtime mission-critical IT and enterprise surveillance deployments.",
+        image: "/images/promise/r3600.jpg",
+        datasheet: "https://drive.google.com/file/d/1pJ_TUcwCnFMLz3sdOrPUmSWsRQiwfAcH/view?usp=drive_link"
+      },
+      {
+        id: "vtrak-8206d",
+        name: "VTrak 8206D",
+        description: "high-performance NVMe storage platform designed for AI applications, delivering ultra-fast speeds and seamless data access using NVMe-oF technology.",
+        image: "/images/promise/VTrak_8206d.png",
+        datasheet: "https://drive.google.com/file/d/1nEGzeIz4JEKtFrjIKiEeigpayj9_rcnA/view?usp=sharing"
+      },
+      {
+        id: "vtrak-j5960",
+        name: "VTrak J5960",
+        description: "Ultra-dense, energy-efficient 4U 60-bay enterprise SAS JBOD expansion enclosure delivering massive capacity and up to 15GB/s bandwidth for heavy data center workloads.",
+        image: "/images/promise/j5960.jpg",
+        datasheet: "https://drive.google.com/file/d/1Gf0QiVKrc8TKHMOolE2quGhJg1NAZguI/view?usp=drive_link"
+      }
     ],
   },
   {
@@ -285,7 +297,7 @@ export const brands = [
     name: "Dorlet",
     description: "Professional access control and security management systems",
     logo: "/images/dorlet.png",
-    tagline: "Professional Access Control",
+    tagline: "Controlando los accesos en Infraestructuras Críticas",
     accentColor: "#1e4d8c",
     products: [
       {
@@ -313,44 +325,6 @@ export const brands = [
     ],
   },
   {
-    id: "promise",
-    name: "Promise Technology",
-    description: "Enterprise storage, video surveillance, and cloud infrastructure solutions",
-    logo: "/images/Promise.jpg",
-    tagline: "Realize Your Vision",
-    accentColor: "#00bcd4",
-    products: [
-      {
-        id: "vess-r3600tis",
-        name: "Vess R3600tiS",
-        description: "Highly scalable, single-controller unified storage system optimized for small-to-medium business data applications and virtualized cloud networks.",
-        image: "/images/promise/r3600.jpg",
-        datasheet: "https://drive.google.com/file/d/1pJ_TUcwCnFMLz3sdOrPUmSWsRQiwfAcH/view?usp=drive_link"
-      },
-      {
-        id: "vess-r3600tid",
-        name: "Vess R3600tiD",
-        description: "High-availability, active-active dual-controller unified storage appliance designed for zero-downtime mission-critical IT and enterprise surveillance deployments.",
-        image: "/images/promise/r3600.jpg",
-        datasheet: "https://drive.google.com/file/d/1pJ_TUcwCnFMLz3sdOrPUmSWsRQiwfAcH/view?usp=drive_link"
-      },
-      {
-        id: "vtrak-8206d",
-        name: "VTrak 8206D",
-        description: "high-performance NVMe storage platform designed for AI applications, delivering ultra-fast speeds and seamless data access using NVMe-oF technology.",
-        image: "/images/promise/VTrak_8206d.png",
-        datasheet: "https://drive.google.com/file/d/1nEGzeIz4JEKtFrjIKiEeigpayj9_rcnA/view?usp=sharing"
-      },
-      {
-        id: "vtrak-j5960",
-        name: "VTrak J5960",
-        description: "Ultra-dense, energy-efficient 4U 60-bay enterprise SAS JBOD expansion enclosure delivering massive capacity and up to 15GB/s bandwidth for heavy data center workloads.",
-        image: "/images/promise/j5960.jpg",
-        datasheet: "https://drive.google.com/file/d/1Gf0QiVKrc8TKHMOolE2quGhJg1NAZguI/view?usp=drive_link"
-      }
-    ],
-  },
-  {
     id: "essl",
     name: "eSSL",
     description: "Security at Fingertips - Biometric and time attendance solutions",
@@ -373,6 +347,32 @@ export const brands = [
           'Linux-based hybrid biometric access control & time attendance, visible light facial recognition, 4" touch screen, 1000 faces/1000 cards, 150K transactions, IP65 rated',
         image: "/images/essl/AiFace-Pluto.png",
         datasheet: "https://drive.google.com/file/d/154ae6X_BNfHIZp6WhcxKb0cDYc6EYDq-/view?usp=drive_link",
+      },
+    ],
+  },
+  {
+    id: "digifort",
+    name: "Digifort",
+    description: "Professional video management software for surveillance and security applications",
+    logo: "/images/digifort.jpg",
+    tagline: "One Platform. Total Control. Real-Time Intelligence.",
+    accentColor: "#a61c1c",
+    products: [
+      {
+        id: "dgf-en",
+        name: "Digifort Enterprise",
+        description:
+          "The ultimate high-tier VMS platform offering unlimited camera scalability",
+        image: "/images/digifort/digifort_enterprise.png",
+        datasheet: "https://drive.google.com/file/d/1_fIRVRCFIHPqI4AzY4proos9dtg4CTrb/view?usp=sharing",
+      },
+      {
+        id: "dgf-pr",
+        name: "Digifort Professional",
+        description:
+          "A comprehensive VMS solution for medium-to-large installations",
+        image: "/images/digifort/digifort_professional.png",
+        datasheet: "https://drive.google.com/file/d/1YtzpjT1HwxIta3NtsdInx8BXdUHLdNJM/view?usp=sharing",
       },
     ],
   },
