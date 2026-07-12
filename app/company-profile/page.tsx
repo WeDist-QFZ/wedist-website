@@ -1,8 +1,8 @@
 import { redirect } from "next/navigation"
-import { downloads } from "@/lib/data"
+import { resources } from "@/lib/data"
 
 export default function CompanyProfilePage() {
-  const companyProfile = downloads.find((d) => d.title === "Company Profile")
+  const companyProfile = resources.find((resource) => resource.title === "Company Profile")
 
   // If Firebase URL is set, redirect to it
   if (companyProfile?.externalUrl) {

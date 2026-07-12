@@ -4,7 +4,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft, Radio, Video, Shield, Cctv, ScanLine } from "lucide-react"
+import { ArrowLeft, Radio, Video, Shield, Cctv, ScanLine, Radar, DoorOpen, MonitorPlay, Brain, Eye } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { CyberParticles } from "@/components/cyber-particles"
 import { GlitchText } from "@/components/glitch-text"
@@ -70,9 +70,14 @@ export default function MotorolaSolutionsPage() {
                     />
                   </div>
 
-                  <h1 className="text-5xl md:text-7xl font-bold text-[#f0f0f5] mb-6">
-                    <GlitchText text={brand.name} className="text-white" autoGlitch glitchInterval={8000} />
-                  </h1>
+                  <h1 className="text-4xl md:text-6xl font-bold text-[#f0f0f5] mb-6 whitespace-nowrap">
+  <GlitchText 
+    text={brand.name} 
+    className="text-white" 
+    autoGlitch 
+    glitchInterval={8000} 
+  />
+</h1>
 
                   <p className="text-2xl md:text-3xl font-light text-[#888899] mb-8 tracking-wide">{brand.tagline}</p>
 
@@ -80,9 +85,12 @@ export default function MotorolaSolutionsPage() {
 
                   <div className="flex flex-wrap gap-4">
                     {[
-                      { icon: Radio, label: "Critical Communications" },
+                      { icon: Radar, label: "Advanced Sensing" },
                       { icon: Video, label: "Video Security" },
-                      { icon: Shield, label: "Public Safety" },
+                      { icon: Eye, label: "Surveillance" },
+                      { icon: DoorOpen, label: "Access Control" },
+                      { icon: MonitorPlay, label: "Video Management" },
+                      { icon: Brain, label: "AI Analytics" },
                     ].map((feature, i) => (
                       <div
                         key={i}

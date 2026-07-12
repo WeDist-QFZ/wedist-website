@@ -71,7 +71,7 @@ export function ProductCard({ product, brandId, accentColor, index }: ProductCar
             </Link>
             <p className="text-base text-[#888899] mb-6 leading-relaxed line-clamp-3">{product.description}</p>
 
-            {product.datasheet && (
+            {/* {product.datasheet && (
   <ElectricButton
     className="w-full py-4 text-sm"
     accentColor={accentColor}
@@ -82,6 +82,19 @@ export function ProductCard({ product, brandId, accentColor, index }: ProductCar
       <span className="inline-block">Download Datasheet</span>
     </div>
   </ElectricButton>
+)} */}
+{product.datasheet && (
+  <Link href={`/products/${brandId}/${product.id}`} className="w-full">
+    <ElectricButton
+      className="w-full py-4 text-sm"
+      accentColor={accentColor}
+    >
+      <div className="flex items-center justify-center flex-nowrap w-full">
+        <Download className="w-4 h-4 mr-2 inline-block" />
+        <span className="inline-block">Download Datasheet</span>
+      </div>
+    </ElectricButton>
+  </Link>
 )}
 
           </div>

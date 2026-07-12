@@ -468,18 +468,148 @@ export const events = [
   },
 ]
 
-export const downloads = [
+// An in-site article. Used when `link` is false and the resource should be
+// read on your own domain instead of redirecting somewhere else.
+export type ResourceArticle = {
+  heading: string
+  byline: string
+  author: string
+  // `content` is Markdown. This is how you format the article body:
+  //   - Blank line between blocks   -> new paragraph
+  //   - **text**                    -> bold
+  //   - *text* or _text_            -> italics
+  //   - Lines starting with "- "    -> bullet list
+  //   - Lines starting with "1. "   -> numbered list
+  //   - ## Heading                  -> section heading
+  //   - [label](https://url)        -> link
+  // Write it inside a backtick template literal (see the sample entry below).
+  content: string
+}
+
+export type ResourceItem = {
+  id: string
+  slug: string
+  title: string
+  description: string
+  category: string
+  type: string
+  link: boolean
+  externalUrl?: string
+  size?: string
+  // Free-form keywords surfaced on the card and used for SEO metadata.
+  tags?: string[]
+  // Present only for in-site articles (link === false).
+  article?: ResourceArticle
+}
+
+export const resources: ResourceItem[] = [
   {
-    id: 1,
+    id: "company-profile",
+    slug: "company-profile",
     title: "Company Profile",
     description: "Complete overview of WeDist - our services, partners, and capabilities",
+    category: "Company Profile",
     type: "PDF",
-    size: "5.2 MB",
-    isImportant: true,
-    redirectPath: "company-profile",
-    externalUrl:
-      "https://drive.google.com/file/d/1BwheBcMnsrjPw-y1-aPobfzu9voyKIGd/view?usp=sharing",
+    // size: "5.2 MB",
+    tags: ["Company Profile", "About WeDist", "Distribution", "Partners"],
+    link: true,
+    externalUrl: "https://drive.google.com/file/d/1BwheBcMnsrjPw-y1-aPobfzu9voyKIGd/view?usp=sharing",
   },
+  {
+    id: "ai-surveillance-storage-economics",
+    slug: "ai-surveillance-storage-economics",
+    title: "AI is Changing the Economics of Surveillance Storage",
+    description:
+      "Discover how AI-driven demand is reshaping surveillance storage costs, enterprise HDD availability, and why optimizing existing CCTV infrastructure can deliver greater value before investing in new hardware.",
+    category: "Articles / Blogs",
+    type: "Article",
+    tags: ["AI", "Surveillance", "Storage Economics", "Enterprise HDD", "CCTV"],
+    link: true,
+    externalUrl: "https://www.linkedin.com/pulse/ai-changing-economics-surveillance-storage-wedist-mtftf/",
+  },
+  {
+    id: "how-to-choose-the-right-surveillance-storage",
+    slug: "how-to-choose-the-right-surveillance-storage",
+    title: "How to Choose the Right Surveillance Storage",
+    description:
+      "Selecting storage for a modern surveillance deployment is no longer a simple matter of counting cameras and multiplying by a fixed number. Resolution, frame rate, retention policy, and AI analytics all shape the real-world capacity you will need.",
+    category: "Articles / Blogs",
+    type: "Article",
+    tags: ["Storage", "Surveillance", "Buyer Guide", "Retention", "Best Practices"],
+    // Because link is false, this opens as a full article page on your site
+    // (no redirect). Duplicate this block, change the slug, and edit the
+    // `article` fields below to publish new articles.
+    link: false,
+    article: {
+      heading: "How to Choose the Right Surveillance Storage",
+      byline: "A practical guide for system integrators and IT teams",
+      author: "WeDist Team",
+      // Markdown body. Blank lines separate paragraphs; use **bold**, *italics*,
+      // "- " for bullets, "1. " for numbered lists, and "## " for subheadings.
+      content: `Selecting storage for a modern surveillance deployment is no longer a simple matter of counting cameras and multiplying by a fixed number. **Resolution, frame rate, retention policy, and AI analytics** all shape the real-world capacity you will need.
+
+## Start with retention
+
+Map your retention requirements against compliance obligations. Many organisations *over-provision* because they assume the maximum retention window applies to every camera, when in reality only a subset of feeds require long-term archival.
+
+Key questions to answer first:
+
+- How many days of footage must be kept for compliance?
+- Which cameras actually need that full window?
+- Is footage recorded continuously, or only on motion and events?
+
+## Factor in the workload
+
+Continuous recording behaves very differently from motion-triggered recording, and AI-assisted filtering can dramatically reduce the volume of footage written to disk.
+
+1. Estimate raw daily write volume per camera.
+2. Apply your analytics and compression savings.
+3. Add headroom for future cameras and higher resolutions.
+
+Finally, plan for growth. When in doubt, *optimise the infrastructure you already have* before buying new hardware.`,
+    },
+  },
+  // {
+  //   id: "industry-insights",
+  //   slug: "industry-insights",
+  //   title: "Industry Insights",
+  //   description: "Latest articles and blogs on security technology, smart infrastructure, and digital transformation.",
+  //   category: "Articles / Blogs",
+  //   type: "Article",
+  //   link: false,
+  // },
+  // {
+  //   id: "secure-network-design",
+  //   slug: "secure-network-design",
+  //   title: "Secure Network Design",
+  //   description: "A technical whitepaper on building resilient enterprise network infrastructures.",
+  //   category: "Whitepapers",
+  //   type: "Whitepaper",
+  // },
+  // {
+  //   id: "surveillance-case-study",
+  //   slug: "surveillance-case-study",
+  //   title: "Surveillance Deployment Case Study",
+  //   description: "A real-world case study showcasing a successful camera and analytics installation.",
+  //   category: "Case Studies",
+  //   type: "Case Study",
+  // },
+  // {
+  //   id: "technical-resources-guide",
+  //   slug: "technical-resources-guide",
+  //   title: "Technical Resources Guide",
+  //   description: "Guides, datasheets, and technical resources for system integrators and IT teams.",
+  //   category: "Technical Resources",
+  //   type: "Resource",
+  // },
+  // {
+  //   id: "product-catalogue",
+  //   slug: "product-catalogue",
+  //   title: "Product Catalogue",
+  //   description: "Download product catalogues and brochures from our leading technology brands.",
+  //   category: "Downloads",
+  //   type: "PDF",
+  // },
 ]
 
 export const contactInfo = {
