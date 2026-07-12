@@ -335,6 +335,13 @@ export const brands = [
         datasheet: "https://drive.google.com/file/d/1pJ_TUcwCnFMLz3sdOrPUmSWsRQiwfAcH/view?usp=drive_link"
       },
       {
+        id: "vtrak-8206d",
+        name: "VTrak 8206D",
+        description: "high-performance NVMe storage platform designed for AI applications, delivering ultra-fast speeds and seamless data access using NVMe-oF technology.",
+        image: "/images/promise/VTrak-8206D.png",
+        datasheet: "https://drive.google.com/file/d/1nEGzeIz4JEKtFrjIKiEeigpayj9_rcnA/view?usp=sharing"
+      },
+      {
         id: "vtrak-j5960",
         name: "VTrak J5960",
         description: "Ultra-dense, energy-efficient 4U 60-bay enterprise SAS JBOD expansion enclosure delivering massive capacity and up to 15GB/s bandwidth for heavy data center workloads.",
