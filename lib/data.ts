@@ -338,7 +338,7 @@ export const brands = [
         id: "vtrak-8206d",
         name: "VTrak 8206D",
         description: "high-performance NVMe storage platform designed for AI applications, delivering ultra-fast speeds and seamless data access using NVMe-oF technology.",
-        image: "/images/promise/VTrak-8206D.png",
+        image: "/images/promise/VTrak_8206d.png",
         datasheet: "https://drive.google.com/file/d/1nEGzeIz4JEKtFrjIKiEeigpayj9_rcnA/view?usp=sharing"
       },
       {
