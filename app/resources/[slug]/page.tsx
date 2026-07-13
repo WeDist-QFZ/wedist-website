@@ -12,6 +12,7 @@ import { AnimatedGrid } from "@/components/animated-grid"
 import { FloatingElements } from "@/components/floating-elements"
 import { CyberCard } from "@/components/cyber-card"
 import { HologramCard } from "@/components/hologram-card"
+import { GoogleDrivePdfViewer } from "@/components/google-drive-pdf-viewer"
 
 import { ResourceRedirectClient } from "./redirect-client"
 
@@ -22,6 +23,15 @@ import {
   ExternalLink,
   BookOpen,
 } from "lucide-react"
+
+// Returns the Drive file id if `url` is a public Google Drive file link, else
+// null. Only Drive file links get the inline PDF viewer; anything else (other
+// Drive URLs, LinkedIn, arbitrary sites) falls through to the redirect flow.
+function getGoogleDriveFileId(url: string): string | null {
+  if (!/drive\.google\.com/.test(url)) return null
+  const match = url.match(/\/d\/([a-zA-Z0-9-_]+)/) ?? url.match(/[?&]id=([a-zA-Z0-9-_]+)/)
+  return match ? match[1] : null
+}
 
 export function generateStaticParams() {
   return resources.map((resource) => ({
@@ -209,8 +219,89 @@ export default async function ResourceDetailPage({
   }
 
 
-
+  /*
+   * EXTERNAL LINK RESOURCE
+   *
+   * Google Drive file links (e.g. .../file/d/<id>/view) render inline as an
+   * embedded PDF on our own domain, wrapped in the site Header/Footer so it
+   * feels like a native page. Every other external link keeps the brief
+   * "Redirecting..." interstitial and forwards the visitor onwards.
+   */
   if (resource.link && resource.externalUrl) {
+    const driveFileId = getGoogleDriveFileId(resource.externalUrl)
+
+    if (driveFileId) {
+      return (
+        <div id="top" className="min-h-screen bg-[#0a0a0f] text-[#f0f0f5] page-transition">
+          <Header />
+
+          <main className="pt-20 md:pt-28 lg:pt-32">
+            {/* HERO */}
+            <section className="relative overflow-hidden cyber-grid py-10 md:py-14">
+              <AnimatedGrid />
+              <CyberParticles count={18} />
+              <FloatingElements count={3} />
+
+              <div className="absolute inset-0">
+                <div className="absolute top-1/4 left-1/4 h-[300px] w-[300px] rounded-full bg-[#f5b800]/10 blur-3xl animate-float" />
+                <div className="absolute bottom-1/4 right-1/4 h-[250px] w-[250px] rounded-full bg-[#f5b800]/5 blur-3xl animate-float-slow" />
+              </div>
+
+              <div className="max-w-[1500px] mx-auto px-4 md:px-8 relative z-10">
+                <ScrollReveal animation="up">
+                  <a
+                    href="/resources"
+                    className="mb-8 inline-flex items-center gap-2 rounded-lg border border-[#f5b800]/30 bg-[#121218]/60 px-4 py-2 text-sm text-[#f0f0f5] transition-all hover:border-[#f5b800]"
+                  >
+                    <ArrowLeft className="h-4 w-4 text-[#f5b800]" />
+                    Back to Resources
+                  </a>
+
+                  <div className="max-w-4xl">
+                    <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#f5b800]/30 bg-[#f5b800]/10 px-3 py-1.5">
+                      <FileText className="h-4 w-4 text-[#f5b800]" />
+                      <span className="text-xs uppercase tracking-[0.2em] text-[#f5b800] md:text-sm">
+                        {resource.category}
+                      </span>
+                    </div>
+
+                    <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 text-[#f0f0f5] text-balance">
+                      {resource.title}
+                    </h1>
+
+                    <p className="max-w-3xl text-base md:text-lg leading-relaxed text-[#888899] text-pretty">
+                      {resource.description}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              </div>
+            </section>
+
+            {/* EMBEDDED PDF */}
+            <section className="relative overflow-hidden bg-[#050508] py-8 md:py-14">
+              <div className="absolute inset-0 hex-pattern opacity-20" />
+
+              <div className="max-w-[1100px] mx-auto px-3 sm:px-4 md:px-8 relative z-10">
+                <ScrollReveal animation="up">
+                  <GoogleDrivePdfViewer shareLink={resource.externalUrl} title={resource.title} />
+                </ScrollReveal>
+              </div>
+            </section>
+
+            <a
+              href="#top"
+              aria-label="Back to top"
+              className="fixed bottom-8 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-[#f5b800]/40 bg-[#f5b800] text-[#0a0a0f] shadow-[0_0_30px_rgba(245,184,0,0.35)] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#ffcc33]"
+            >
+              <ArrowUp className="h-6 w-6" />
+            </a>
+          </main>
+
+          <Footer />
+        </div>
+      )
+    }
+
     return <ResourceRedirectClient title={resource.title} externalUrl={resource.externalUrl} />
   }
     /*

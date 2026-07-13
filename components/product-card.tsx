@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Download } from "lucide-react"
+import { Download, Package } from "lucide-react"
 import { CyberCard } from "@/components/cyber-card"
 import { HologramCard } from "@/components/hologram-card"
 import { ElectricButton } from "@/components/electric-button"
@@ -90,8 +90,8 @@ export function ProductCard({ product, brandId, accentColor, index }: ProductCar
       accentColor={accentColor}
     >
       <div className="flex items-center justify-center flex-nowrap w-full">
-        <Download className="w-4 h-4 mr-2 inline-block" />
-        <span className="inline-block">Download Datasheet</span>
+        <Package className="w-4 h-4 mr-2 inline-block" />
+        <span className="inline-block">Datasheet</span>
       </div>
     </ElectricButton>
   </Link>
