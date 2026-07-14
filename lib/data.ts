@@ -456,17 +456,8 @@ export const partners = [
   { name: "eSSL", logo: "/images/eSSL.png", slug: "essl" },
 ]
 
-export const events = [
-  {
-    id: 0,
-    title: "WeDist 5th Anniversary Celebration",
-    date: "August 9, 2026",
-    time: "all day",
-    location: "WeDist",
-    description:
-      "Join us as we celebrate WeDist's 5th Anniversary, marking five years of innovation, partnerships, and growth with our valued customers, partners, and team.",
-  },
-]
+export { events, getEventBySlug, getFormEventSlugs, EVENT_FORM_FIELDS, EVENT_FORM_ENDPOINT } from "./events"
+export type { EventItem, EventFormField, EventFormFieldName } from "./events"
 
 // An in-site article. Used when `link` is false and the resource should be
 // read on your own domain instead of redirecting somewhere else.
