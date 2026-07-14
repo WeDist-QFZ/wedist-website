@@ -10,6 +10,7 @@ import { MatrixRain } from "./matrix-rain"
 import { FloatingElements } from "./floating-elements"
 import { AnimatedGrid } from "./animated-grid"
 import { useParallax } from "@/hooks/use-scroll-animation"
+import Link from "next/link"
 
 export function HeroSection() {
   const [mounted, setMounted] = useState(false)
@@ -107,14 +108,85 @@ export function HeroSection() {
 
           {/* Subtitle */}
           <p
-            className={`text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-[#888899] max-w-4xl mx-auto mb-8 md:mb-14 leading-relaxed px-2 transition-all duration-700 delay-200 ${
-              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
-          >
-            WeDist is the trusted distributor in Qatar for{" "}
-            <span className="text-[#f5b800] text-glow-sm">Digifort, Motorola Solutions, Antaira, Zyxel, QSAN, Western Digital, BioMax, Dorlet, Promise Technology, and eSSL</span>
-            , delivering video surveillance, access control, networking, and data storage solutions to businesses across Qatar.
-          </p>
+  className={`text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-[#888899] max-w-4xl mx-auto mb-8 md:mb-14 leading-relaxed px-2 transition-all duration-700 delay-200 ${
+    mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+  }`}
+>
+  WeDist is the trusted distributor in Qatar for{" "}
+  <span className="text-[#f5b800] text-glow-sm">
+    <Link
+      href="/products/digifort"
+      className="inline-block text-inherit no-underline transition-all duration-300 drop-shadow-[0_0_18px_rgba(255,215,0,1)] hover:text-white hover:drop-shadow-[0_0_34px_rgba(255,255,255,1)] hover:scale-105"
+    >
+      Digifort
+    </Link>
+    ,{" "}
+    <Link
+      href="/products/motorola-solutions"
+      className="inline-block text-inherit no-underline transition-all duration-300 drop-shadow-[0_0_18px_rgba(255,215,0,1)] hover:text-white hover:drop-shadow-[0_0_34px_rgba(255,255,255,1)] hover:scale-105"
+    >
+      Motorola Solutions
+    </Link>
+    ,{" "}
+    <Link
+      href="/products/antaira"
+      className="inline-block text-inherit no-underline transition-all duration-300 drop-shadow-[0_0_18px_rgba(255,215,0,1)] hover:text-white hover:drop-shadow-[0_0_34px_rgba(255,255,255,1)] hover:scale-105"
+    >
+      Antaira
+    </Link>
+    ,{" "}
+    <Link
+      href="/products/zyxel"
+      className="inline-block text-inherit no-underline transition-all duration-300 drop-shadow-[0_0_18px_rgba(255,215,0,1)] hover:text-white hover:drop-shadow-[0_0_34px_rgba(255,255,255,1)] hover:scale-105"
+    >
+      Zyxel
+    </Link>
+    ,{" "}
+    <Link
+      href="/products/qsan"
+      className="inline-block text-inherit no-underline transition-all duration-300 drop-shadow-[0_0_18px_rgba(255,215,0,1)] hover:text-white hover:drop-shadow-[0_0_34px_rgba(255,255,255,1)] hover:scale-105"
+    >
+      QSAN
+    </Link>
+    ,{" "}
+    <Link
+      href="/products/western-digital"
+      className="inline-block text-inherit no-underline transition-all duration-300 drop-shadow-[0_0_18px_rgba(255,215,0,1)] hover:text-white hover:drop-shadow-[0_0_34px_rgba(255,255,255,1)] hover:scale-105"
+    >
+      Western Digital
+    </Link>
+    ,{" "}
+    <Link
+      href="/products/biomax"
+      className="inline-block text-inherit no-underline transition-all duration-300 drop-shadow-[0_0_18px_rgba(255,215,0,1)] hover:text-white hover:drop-shadow-[0_0_34px_rgba(255,255,255,1)] hover:scale-105"
+    >
+      BioMax
+    </Link>
+    ,{" "}
+    <Link
+      href="/products/dorlet"
+      className="inline-block text-inherit no-underline transition-all duration-300 drop-shadow-[0_0_18px_rgba(255,215,0,1)] hover:text-white hover:drop-shadow-[0_0_34px_rgba(255,255,255,1)] hover:scale-105"
+    >
+      Dorlet
+    </Link>
+    ,{" "}
+    <Link
+      href="/products/promise"
+      className="inline-block text-inherit no-underline transition-all duration-300 drop-shadow-[0_0_18px_rgba(255,215,0,1)] hover:text-white hover:drop-shadow-[0_0_34px_rgba(255,255,255,1)] hover:scale-105"
+    >
+      Promise Technology
+    </Link>
+    , and{" "}
+    <Link
+      href="/products/essl"
+      className="inline-block text-inherit no-underline transition-all duration-300 drop-shadow-[0_0_18px_rgba(255,215,0,1)] hover:text-white hover:drop-shadow-[0_0_34px_rgba(255,255,255,1)] hover:scale-105"
+    >
+      eSSL
+    </Link>
+  </span>
+  , delivering video surveillance, access control, networking, and data storage
+  solutions to businesses across Qatar.
+</p>
 
           {/* CTA */}
           <div
