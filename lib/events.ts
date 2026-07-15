@@ -67,8 +67,8 @@ export const events: EventItem[] = [
     slug: "digifort-training",
     hasForm: true,
     title: "Digifort Certified Online Training Program",
-    date: "Will be announced soon",
-    time: "5PM - 7PM (GMT+3)",
+    date: "TBD",
+    time: "TBD",
     location: "Online",
     description:
       "An exclusive Digifort Certified Online Training Program",
