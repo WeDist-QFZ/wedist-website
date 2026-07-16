@@ -48,7 +48,7 @@ export default function ResourcesPage() {
                   <span className="text-[#f5b800] text-glow">Resources</span> Hub
                 </h1>
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#888899] leading-relaxed px-1">
-                  Browse company profiles, articles, blogs, whitepapers, case studies, technical resources, and
+                  Browse company profile, articles, blogs, whitepapers, case studies, technical resources, and
                   downloads from our full resource collection.
                 </p>
               </div>

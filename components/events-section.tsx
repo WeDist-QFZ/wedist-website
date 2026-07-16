@@ -9,108 +9,157 @@ import { NeonBorder } from "./neon-border"
 import { CyberParticles } from "./cyber-particles"
 import { GlitchText } from "./glitch-text"
 
+const HOMEPAGE_EVENTS_LIMIT = 3
+
 export function EventsSection() {
+  const featuredEvents = events.slice(0, HOMEPAGE_EVENTS_LIMIT)
+  const hasMoreEvents = events.length > HOMEPAGE_EVENTS_LIMIT
+
   return (
-    <section id="events" className="py-16 md:py-32 bg-[#0a0a0f] cyber-grid relative overflow-hidden">
-      {/* Particles */}
+    <section
+      id="events"
+      className="relative overflow-hidden bg-[#0a0a0f] py-16 md:py-32 cyber-grid"
+    >
       <CyberParticles count={15} />
 
-      {/* Animated background elements - responsive */}
-      <div className="absolute top-1/4 right-0 w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-[#f5b800]/5 rounded-full blur-3xl animate-float morph-bg" />
-      <div className="absolute bottom-1/4 left-0 w-[200px] md:w-[400px] h-[200px] md:h-[400px] bg-[#f5b800]/3 rounded-full blur-3xl animate-float-slow morph-bg" />
-      <div className="absolute top-1/2 left-1/2 w-[150px] md:w-[300px] h-[150px] md:h-[300px] bg-[#f5b800]/4 rounded-full blur-3xl animate-float-reverse" />
+      <div className="pointer-events-none absolute top-1/4 right-0 h-[250px] w-[250px] rounded-full bg-[#f5b800]/5 blur-3xl animate-float morph-bg md:h-[500px] md:w-[500px]" />
+      <div className="pointer-events-none absolute bottom-1/4 left-0 h-[200px] w-[200px] rounded-full bg-[#f5b800]/3 blur-3xl animate-float-slow morph-bg md:h-[400px] md:w-[400px]" />
+      <div className="pointer-events-none absolute top-1/2 left-1/2 h-[150px] w-[150px] rounded-full bg-[#f5b800]/4 blur-3xl animate-float-reverse md:h-[300px] md:w-[300px]" />
 
-      {/* Decorative corners - hidden on mobile */}
-      <div className="absolute top-10 left-10 w-40 h-40 border-l-2 border-t-2 border-[#f5b800]/20 hidden md:block" />
-      <div className="absolute bottom-10 right-10 w-40 h-40 border-r-2 border-b-2 border-[#f5b800]/20 hidden md:block" />
+      <div className="pointer-events-none absolute top-10 left-10 hidden h-40 w-40 border-l-2 border-t-2 border-[#f5b800]/20 md:block" />
+      <div className="pointer-events-none absolute right-10 bottom-10 hidden h-40 w-40 border-r-2 border-b-2 border-[#f5b800]/20 md:block" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal animation="up">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10 md:mb-20">
+          <div className="mb-10 flex flex-col gap-6 md:mb-20 md:flex-row md:items-end md:justify-between">
             <div>
-              <div className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-5 py-2 bg-[#f5b800]/10 border border-[#f5b800]/30 rounded-full mb-4 md:mb-6">
-                <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-[#f5b800]" />
-                <span className="text-xs md:text-sm font-medium text-[#f5b800] tracking-[0.15em] md:tracking-[0.2em]">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#f5b800]/30 bg-[#f5b800]/10 px-4 py-2 md:mb-6 md:gap-3 md:px-5">
+                <Sparkles className="h-4 w-4 text-[#f5b800] md:h-5 md:w-5" />
+                <span className="text-xs font-medium tracking-[0.15em] text-[#f5b800] md:text-sm md:tracking-[0.2em]">
                   LATEST EVENTS
                 </span>
               </div>
-              <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#f0f0f5]">
+
+              <p className="text-2xl font-bold text-[#f0f0f5] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                 Upcoming{" "}
-                <GlitchText text="Events" className="text-[#f5b800] text-glow" autoGlitch glitchInterval={10000} /> &
-                Workshops
+                <GlitchText
+                  text="Events"
+                  className="text-[#f5b800] text-glow"
+                  autoGlitch
+                  glitchInterval={10000}
+                />{" "}
+                & Workshops
               </p>
             </div>
+
+            {hasMoreEvents && (
+              <div className="flex items-start md:items-end">
+                <Link
+                  href="/events"
+                  className="inline-flex items-center gap-2 rounded-full border border-[#f5b800]/30 bg-[#f5b800]/10 px-5 py-3 text-sm font-medium text-[#f5b800] transition-all hover:border-[#f5b800]/50 hover:bg-[#f5b800]/15 hover:text-[#ffd54f] md:px-6 md:py-3.5 md:text-base"
+                >
+                  View More Events
+                  <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
+                </Link>
+              </div>
+            )}
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
-          {events.map((event, index) => (
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
+          {featuredEvents.map((event, index) => (
             <ScrollReveal key={event.id} animation="up" delay={index * 150}>
               <EventCard event={event} highlight={index === 0} />
             </ScrollReveal>
           ))}
         </div>
+
+        {hasMoreEvents && (
+          <ScrollReveal animation="up" delay={250}>
+            <div className="mt-8 flex justify-center md:mt-12">
+              <Link
+                href="/events"
+                className="group inline-flex items-center gap-2 rounded-full border border-[#2a2a36] bg-[#121218]/90 px-5 py-3 text-sm text-[#cfd0da] transition-all hover:border-[#f5b800]/40 hover:text-[#f5b800] md:text-base"
+              >
+                Explore all events
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
+          </ScrollReveal>
+        )}
       </div>
     </section>
   )
 }
 
-function EventCard({ event, highlight }: { event: EventItem; highlight: boolean }) {
-  const isClickable = Boolean(event.hasForm && event.slug)
+function EventCard({
+  event,
+  highlight,
+}: {
+  event: EventItem
+  highlight: boolean
+}) {
+  const isClickable = Boolean(event.slug)
 
   const card = (
     <CyberCard className="h-full" tiltEffect={isClickable}>
       <NeonBorder animate={highlight}>
-        <div className="p-6 md:p-10 min-h-[320px] md:min-h-[400px] flex flex-col relative overflow-hidden group">
-          {/* Background glow on hover */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#f5b800]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="group relative flex min-h-[320px] h-full flex-col overflow-hidden p-6 md:min-h-[400px] md:p-10">
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#f5b800]/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
-          {/* Scan line effect */}
-          <div className="absolute inset-0 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-0 transition-opacity group-hover:opacity-100">
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#f5b800]/30 to-transparent animate-[scanline-move_3s_linear_infinite]" />
           </div>
 
-          <div className="flex items-center gap-2 md:gap-3 mb-6 md:mb-8 relative z-10 flex-wrap">
-            <div className="flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 md:py-2 bg-[#f5b800]/10 rounded-full text-[#f5b800] border border-[#f5b800]/20">
-              <Calendar className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
-              <span className="text-sm md:text-base font-medium whitespace-nowrap">{event.date}</span>
+          <div className="relative z-10 mb-6 flex flex-wrap items-center gap-2 md:mb-8 md:gap-3">
+            <div className="flex items-center gap-2 rounded-full border border-[#f5b800]/20 bg-[#f5b800]/10 px-3 py-1.5 text-[#f5b800] md:gap-3 md:px-4 md:py-2">
+              <Calendar className="h-4 w-4 flex-shrink-0 md:h-5 md:w-5" />
+              <span className="whitespace-nowrap text-sm font-medium md:text-base">
+                {event.date}
+              </span>
             </div>
-            {isClickable && (
-              <span className="px-2 md:px-3 py-1 bg-[#f5b800] text-[#0a0a0f] text-[10px] md:text-xs font-bold rounded-full glow-yellow whitespace-nowrap">
+
+            {event.hasForm ? (
+              <span className="glow-yellow whitespace-nowrap rounded-full bg-[#f5b800] px-2 py-1 text-[10px] font-bold text-[#0a0a0f] md:px-3 md:text-xs">
                 REGISTRATION OPEN
               </span>
-            )}
+            ) : event.slug ? (
+              <span className="whitespace-nowrap rounded-full border border-[#f5b800]/30 bg-[#f5b800]/10 px-2 py-1 text-[10px] font-bold text-[#f5b800] md:px-3 md:text-xs">
+                EVENT DETAILS
+              </span>
+            ) : null}
           </div>
 
-          <h3 className="text-xl md:text-2xl font-semibold text-[#f0f0f5] mb-3 md:mb-4 group-hover:text-[#f5b800] transition-colors relative z-10 line-clamp-2 min-h-[56px] md:min-h-[64px]">
+          <h3 className="relative z-10 mb-3 min-h-[56px] line-clamp-2 text-xl font-semibold text-[#f0f0f5] transition-colors group-hover:text-[#f5b800] md:mb-4 md:min-h-[64px] md:text-2xl">
             {event.title}
           </h3>
 
-          <p className="text-[#888899] text-base md:text-lg mb-6 md:mb-8 flex-grow line-clamp-3 relative z-10 min-h-[72px] md:min-h-[84px]">
+          <p className="relative z-10 mb-6 min-h-[72px] flex-grow line-clamp-3 text-base text-[#888899] md:mb-8 md:min-h-[84px] md:text-lg">
             {event.description}
           </p>
 
-          <div className="flex items-center justify-between pt-4 md:pt-6 border-t border-[#2a2a36] relative z-10 mt-auto gap-2">
-            <div className="flex items-center gap-1.5 md:gap-2 text-[#888899] text-sm md:text-base">
-              <MapPin className="w-4 h-4 md:w-5 md:h-5 text-[#f5b800] flex-shrink-0" />
-              <span className="truncate max-w-[100px] md:max-w-[120px]">{event.location}</span>
+          <div className="relative z-10 mt-auto flex items-center justify-between gap-2 border-t border-[#2a2a36] pt-4 md:pt-6">
+            <div className="flex items-center gap-1.5 text-sm text-[#888899] md:gap-2 md:text-base">
+              <MapPin className="h-4 w-4 flex-shrink-0 text-[#f5b800] md:h-5 md:w-5" />
+              <span className="max-w-[100px] truncate md:max-w-[120px]">
+                {event.location}
+              </span>
             </div>
-            <div className="flex items-center gap-1.5 md:gap-2 text-[#888899] text-sm md:text-base">
-              <Clock className="w-4 h-4 md:w-5 md:h-5 text-[#f5b800] flex-shrink-0" />
+
+            <div className="flex items-center gap-1.5 text-sm text-[#888899] md:gap-2 md:text-base">
+              <Clock className="h-4 w-4 flex-shrink-0 text-[#f5b800] md:h-5 md:w-5" />
               <span>{event.time}</span>
             </div>
           </div>
 
-          {/* Register CTA - only for events with a form */}
-          {isClickable && (
-            <div className="flex items-center gap-2 pt-4 relative z-10 text-[#f5b800] font-medium text-sm md:text-base">
-              Register now
-              <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-2 transition-transform" />
+          {event.slug && (
+            <div className="relative z-10 flex items-center gap-2 pt-4 text-sm font-medium text-[#f5b800] md:text-base">
+              {event.hasForm ? "Register now" : "View event"}
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-2 md:h-5 md:w-5" />
             </div>
           )}
 
-          {/* Corner accent */}
-          <div className="absolute -bottom-10 -right-10 w-24 md:w-32 h-24 md:h-32 border border-[#f5b800]/10 rounded-full group-hover:border-[#f5b800]/30 transition-colors" />
+          <div className="pointer-events-none absolute -right-10 -bottom-10 h-24 w-24 rounded-full border border-[#f5b800]/10 transition-colors group-hover:border-[#f5b800]/30 md:h-32 md:w-32" />
         </div>
       </NeonBorder>
     </CyberCard>
@@ -120,7 +169,9 @@ function EventCard({ event, highlight }: { event: EventItem; highlight: boolean 
     return (
       <Link
         href={`/events/${event.slug}`}
-        aria-label={`Register for ${event.title}`}
+        aria-label={
+          event.hasForm ? `Register for ${event.title}` : `View ${event.title}`
+        }
         className="block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f5b800]/60"
       >
         {card}
@@ -128,6 +179,5 @@ function EventCard({ event, highlight }: { event: EventItem; highlight: boolean 
     )
   }
 
-  // Non-form events are informational only and not clickable.
   return <div className="h-full cursor-default">{card}</div>
 }

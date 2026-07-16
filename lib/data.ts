@@ -456,7 +456,7 @@ export const partners = [
   { name: "eSSL", logo: "/images/eSSL.png", slug: "essl" },
 ]
 
-export { events, getEventBySlug, getFormEventSlugs, EVENT_FORM_FIELDS, EVENT_FORM_ENDPOINT } from "./events"
+export { events, getEventBySlug, getEventSlugs, EVENT_FORM_FIELDS, EVENT_FORM_ENDPOINT } from "./events"
 export type { EventItem, EventFormField, EventFormFieldName } from "./events"
 
 // An in-site article. Used when `link` is false and the resource should be

@@ -35,6 +35,18 @@ export type EventItem = {
   // Optional heading shown above the registration form.
   formTitle?: string
   formSubtitle?: string
+    // Optional event poster
+  poster?: {
+    src: string
+    alt?: string
+  }
+
+  // Optional external links
+  externalLinks?: {
+    title: string
+    url: string
+    description?: string
+  }[]
 }
 
 // The registration form fields. Name, Email, Phone and Company are mandatory;
@@ -95,13 +107,69 @@ Interested professionals are invited to register their interest. Training schedu
 
 Become part of this exclusive learning opportunity and take the next step in your security technology career.`,
   },
+  {
+  id: 2,
+  slug: "zyxel-secure-cloud-networks-webinar",
+  hasForm: false,
+  title: "Secure Cloud Networks & Intelligent WiFi Webinar",
+  date: "July 21, 2026",
+  time: "11:00 AM AST",
+  location: "Online",
+
+  description:
+    "Discover how secure cloud networking and intelligent WiFi solutions can transform connectivity for stadiums, open spaces, hospitality, and enterprise environments.",
+
+  formTitle: "Reserve Your Seat",
+
+  formSubtitle:
+    "Join WeDist and Zyxel Networks for an exclusive live webinar exploring next-generation cloud-managed networking and intelligent wireless solutions. Register today to secure your place.",
+
+  poster: {
+    src: "/images/events/zyxel1.jpeg",
+    alt: "Secure Cloud Networks & Intelligent WiFi Webinar Poster",
+  },
+
+  externalLinks: [
+    {
+      title: "Zyxel Networks Official Website", 
+      url: "https://www.zyxel.com/",
+      description: "Learn more about Zyxel Networks and their innovative networking solutions."
+    }
+  ],
+
+  longDescription: `As part of WeDist's ongoing technology enablement initiatives, we are pleased to invite IT professionals, system integrators, consultants, and channel partners to an exclusive **Secure Cloud Networks & Intelligent WiFi** webinar in collaboration with **Zyxel Networks**.
+
+Discover how modern cloud-managed networking solutions simplify deployment, enhance security, and deliver reliable wireless connectivity across demanding environments including **stadiums, hospitality venues, open public spaces, education, and enterprise campuses**.
+
+Whether you're planning new deployments or modernizing existing infrastructure, this webinar will provide valuable insights into designing scalable, secure, and high-performance networks.
+
+## What You'll Learn
+
+- Introduction to Zyxel's cloud-managed networking ecosystem
+- Building secure and scalable enterprise WiFi deployments
+- Best practices for cloud-based network management
+- Intelligent wireless solutions for high-density environments
+- Networking solutions for hospitality, public venues, education, and commercial facilities
+- Live product overview and deployment recommendations
+- Interactive Q&A session with networking specialists
+
+## Why Attend?
+
+This live webinar offers an opportunity to stay up to date with the latest networking technologies while learning practical approaches to deploying secure, reliable, and centrally managed network infrastructure.
+
+Whether you're a network engineer, IT manager, consultant, or system integrator, you'll gain valuable knowledge that can help simplify deployments and improve network performance.
+
+Seats are limited. Register today to reserve your place and receive the webinar joining instructions before the event.`,
+},
 ]
 
 // Only events with both a slug and a form are eligible for a detail page.
 export function getEventBySlug(slug: string): EventItem | undefined {
-  return events.find((e) => e.slug === slug && e.hasForm)
+  return events.find((e) => e.slug === slug)
 }
 
-export function getFormEventSlugs(): string[] {
-  return events.filter((e) => e.hasForm && e.slug).map((e) => e.slug as string)
+export function getEventSlugs(): string[] {
+  return events
+    .filter((e) => e.slug)
+    .map((e) => e.slug as string)
 }
