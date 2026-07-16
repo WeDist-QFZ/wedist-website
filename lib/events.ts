@@ -131,9 +131,9 @@ Become part of this exclusive learning opportunity and take the next step in you
 
   externalLinks: [
     {
-      title: "Zyxel Networks Official Website", 
-      url: "https://www.zyxel.com/",
-      description: "Learn more about Zyxel Networks and their innovative networking solutions."
+      title: "Registration Link", 
+      url: "https://attendee.gotowebinar.com/register/6953372463930616665",
+      description: "Register for the Secure Cloud Networks & Intelligent WiFi Webinar hosted by Zyxel Networks using this link.",
     }
   ],
 
