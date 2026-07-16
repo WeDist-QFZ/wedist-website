@@ -31,6 +31,22 @@ export const brands = [
         image: "/images/motorola-solutions/srxp4-2v10-emd-ir.png",
         datasheet: "https://drive.google.com/file/d/1qD1meEKVafvSa5qfgrWokevH7kcVQTrK/view?usp=sharing",
       },
+            {
+        id: "srxe4-dome",
+        name: "Sarix Enhanced 4/4P Series Dome",
+        description:
+          "High-performance 2–8 MP environmental IR network dome camera featuring a 3.4–10.5 mm varifocal lens. Engineered with True WDR, an innovative glare-reducing split-IR design, and robust IP66/IP67/IP68 and IK10 vandal resistance. Powered by AI Smart Analytics for advanced human and vehicle classification, making it ideal for proactive threat detection in extreme environments.",
+        image: "/images/motorola-solutions/srxe4-4p-dome.png",
+        datasheet: "https://drive.google.com/file/d/1Y7hQZFd4KfzHi62-gCZ_IDZJbSN4jB9y/view?usp=drive_link",
+      },
+            {
+        id: "srxe4-bullet",
+        name: "Sarix Enhanced 4/4P Series Bullet",
+        description:
+          "High-performance 2–8 MP environmental IR network bullet camera featuring a high-precision varifocal lens. Engineered with True WDR, high-frame-rate capture up to 60 fps, and a ruggedized IP66/IP67/IP68 weather-proof and IK10/IK11 vandal-resistant enclosure. Powered by AI-driven Smart Analytics for advanced human, vehicle, and audio event detection, providing reliable situational awareness and proactive threat detection in extreme environments.",
+        image: "/images/motorola-solutions/srxe4-4p-bullet.png",
+        datasheet: "https://drive.google.com/file/d/1p3ksDAK2gpJQLea_bzwqbxEtYA_Bvwta/view?usp=drive_link",
+      },
     ],
   },
   {
