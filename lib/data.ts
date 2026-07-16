@@ -41,7 +41,7 @@ export const brands = [
       },
             {
         id: "srxe4-bullet",
-        name: "Sarix Enhanced 4/4P Series Bullet",
+        name: "Sarix Enhanced 4/4P Series Bullet", 
         description:
           "High-performance 2–8 MP environmental IR network bullet camera featuring a high-precision varifocal lens. Engineered with True WDR, high-frame-rate capture up to 60 fps, and a ruggedized IP66/IP67/IP68 weather-proof and IK10/IK11 vandal-resistant enclosure. Powered by AI-driven Smart Analytics for advanced human, vehicle, and audio event detection, providing reliable situational awareness and proactive threat detection in extreme environments.",
         image: "/images/motorola-solutions/srxe4-4p-bullet.png",
