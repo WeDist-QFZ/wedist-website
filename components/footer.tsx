@@ -215,10 +215,11 @@ export function Footer() {
         </div>
 
         <div className="mt-16 md:mt-8 pt-8 md:pt-5 border-t border-[#2a2a36] flex flex-col lg:flex-row justify-between items-center gap-5 md:gap-4">
-          <p className="text-[#888899] text-[15px] md:text-sm">
-            © {new Date().getFullYear()} WeDist. All rights reserved.
-          </p>
-          <div className="flex gap-6">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+            <p className="text-[#888899] text-[15px] md:text-sm">
+              © {new Date().getFullYear()} WeDist. All rights reserved.
+            </p>
+            <span className="hidden sm:inline text-[#555566]">|</span>
             <Link
               href="https://www.termsfeed.com/live/192be16e-a89c-4fb8-9244-973661a0d516"
               target="_blank"
@@ -228,6 +229,22 @@ export function Footer() {
               Privacy Policy
             </Link>
           </div>
+
+          <Link
+            href="https://www.arunmagesh.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center opacity-70 hover:opacity-100 transition-all duration-300"
+            aria-label="Visit Arun Magesh's website"
+          >
+            <Image
+              src="/logo.png"
+              alt="Developed by Arun Magesh"
+              width={110}
+              height={32}
+              className="h-6 md:h-7 w-auto"
+            />
+          </Link>
         </div>
       </div>
     </footer>
