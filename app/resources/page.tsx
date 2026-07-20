@@ -20,6 +20,12 @@ const categories = [
   "Downloads",
 ]
 
+function getGoogleDriveFileId(url: string): string | null {
+  if (!/drive\.google\.com/.test(url)) return null
+  const match = url.match(/\/d\/([a-zA-Z0-9-_]+)/) ?? url.match(/[?&]id=([a-zA-Z0-9-_]+)/)
+  return match ? match[1] : null
+}
+
 export default function ResourcesPage() {
   return (
     <div className="min-h-screen bg-[#0a0a0f] page-transition">
@@ -79,21 +85,23 @@ export default function ResourcesPage() {
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-5">
                     {items.map((resource, index) => {
-                      const isLink = resource.link && Boolean(resource.externalUrl)
+                      const isDrivePdf = Boolean(resource.externalUrl && getGoogleDriveFileId(resource.externalUrl))
+                      const isLink = resource.link && Boolean(resource.externalUrl) && !isDrivePdf
                       const isArticle = !resource.link && Boolean(resource.article)
                       // Choose the icon, badge and call-to-action per resource kind.
-                      const kind = isLink
-                        ? { Icon: ExternalLink, label: "External Link", cta: "Visit link", CtaIcon: ExternalLink }
-                        : isArticle
-                          ? { Icon: BookOpen, label: "Article", cta: "Read article", CtaIcon: ArrowRight }
-                          : { Icon: FileText, label: resource.type, cta: "Open", CtaIcon: Download }
+                      const kind = isDrivePdf
+                        ? { Icon: FileText, label: "PDF", cta: "View document", CtaIcon: ArrowRight }
+                        : isLink
+                          ? { Icon: ExternalLink, label: "External Link", cta: "Visit link", CtaIcon: ExternalLink }
+                          : isArticle
+                            ? { Icon: BookOpen, label: "Article", cta: "Read article", CtaIcon: ArrowRight }
+                            : { Icon: FileText, label: resource.type, cta: "Open", CtaIcon: Download }
                       return (
 <ScrollReveal key={resource.id} animation="scale" delay={index * 75}>
   <CyberCard className="h-full" tiltEffect>
     <HologramCard>
       <Link
   href={`/resources/${resource.slug}`}
-  {...(isLink ? { target: "_blank", rel: "noopener noreferrer" } : {})}
   aria-label={`${kind.cta}: ${resource.title}`}
   className="block h-full"
 >

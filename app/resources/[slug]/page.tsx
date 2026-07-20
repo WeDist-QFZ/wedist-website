@@ -59,18 +59,36 @@ export async function generateMetadata({
   const description = resource.article?.byline ?? resource.description
 
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wedist.net"
+  const pdfUrl = resource.externalUrl && getGoogleDriveFileId(resource.externalUrl)
+    ? `${siteUrl}/resources/${resource.slug}/pdf`
+    : undefined
+
   return {
     title: `${title} | WeDist Resources`,
     description,
     keywords: resource.tags,
-
+    alternates: pdfUrl
+      ? {
+          canonical: `${siteUrl}/resources/${resource.slug}`,
+          types: {
+            "application/pdf": pdfUrl,
+          },
+        }
+      : undefined,
     openGraph: {
       title,
       description,
       type: resource.article
         ? "article"
         : "website",
+      url: `${siteUrl}/resources/${resource.slug}`,
     },
+    other: pdfUrl
+      ? {
+          "pdf-url": pdfUrl,
+        }
+      : undefined,
   }
 }
 
@@ -272,6 +290,7 @@ export default async function ResourceDetailPage({
                     <p className="max-w-3xl text-base md:text-lg leading-relaxed text-[#888899] text-pretty">
                       {resource.description}
                     </p>
+
                   </div>
                 </ScrollReveal>
               </div>

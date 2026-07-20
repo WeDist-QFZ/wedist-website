@@ -10,6 +10,8 @@ import {
     ZoomIn,
     ZoomOut,
     ArrowUp,
+    Share2,
+    Check,
 } from "lucide-react"
 
 // import "react-pdf/dist/Page/AnnotationLayer.css"
@@ -38,6 +40,7 @@ export function GoogleDrivePdfViewerImpl({ shareLink, title }: ViewerProps) {
     const [containerWidth, setContainerWidth] = useState(800)
     const [zoom, setZoom] = useState(1)
     const [isFullscreen, setIsFullscreen] = useState(false)
+    const [copied, setCopied] = useState(false)
     const wrapperRef = useRef<HTMLDivElement>(null)
     const containerRef = useRef<HTMLDivElement>(null)
     const scrollRef = useRef<HTMLDivElement>(null)
@@ -68,18 +71,47 @@ export function GoogleDrivePdfViewerImpl({ shareLink, title }: ViewerProps) {
         return () => document.removeEventListener("fullscreenchange", onChange)
     }, [])
 
+    useEffect(() => {
+        const root = document.documentElement
+        const body = document.body
+
+        if (isFullscreen) {
+            root.style.overflow = "hidden"
+            body.style.overflow = "hidden"
+            body.style.touchAction = "none"
+        } else {
+            root.style.overflow = ""
+            body.style.overflow = ""
+            body.style.touchAction = ""
+        }
+
+        return () => {
+            root.style.overflow = ""
+            body.style.overflow = ""
+            body.style.touchAction = ""
+        }
+    }, [isFullscreen])
+
     const toggleFullscreen = useCallback(async () => {
         const el = wrapperRef.current
         if (!el) return
+
         try {
             if (document.fullscreenElement) {
                 await document.exitFullscreen()
-            } else {
-                await el.requestFullscreen()
+                return
+            }
+
+            if (typeof el.requestFullscreen === "function") {
+                await el.requestFullscreen({ navigationUI: "hide" })
+                return
             }
         } catch {
-            // Ignore: some browsers/iframes block the Fullscreen API.
+            // Fall back to the in-page expanded layout on browsers that block the
+            // native fullscreen API (especially mobile Safari / some embedded webviews).
         }
+
+        setIsFullscreen((prev) => !prev)
     }, [])
 
     // Final render width: fit the container, cap on large screens, apply zoom.
@@ -98,6 +130,22 @@ export function GoogleDrivePdfViewerImpl({ shareLink, title }: ViewerProps) {
         const base = (title ?? "document").replace(/[^\w\-]+/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "")
         return `${base || "document"}.pdf`
     }, [title])
+
+    const shareUrl = useMemo(() => {
+        if (typeof window === "undefined") return ""
+        return `${window.location.origin}${window.location.pathname}`
+    }, [])
+
+    const copyShareLink = useCallback(async () => {
+        if (!shareUrl) return
+        try {
+            await navigator.clipboard.writeText(shareUrl)
+            setCopied(true)
+            window.setTimeout(() => setCopied(false), 1600)
+        } catch {
+            // Ignore clipboard failures on unsupported browsers.
+        }
+    }, [shareUrl])
 
     // Observe each page as it scrolls through the viewport and keep the page
     // indicator in sync with whichever page is most centred. Re-created whenever
@@ -152,6 +200,15 @@ export function GoogleDrivePdfViewerImpl({ shareLink, title }: ViewerProps) {
                             <Download className="h-4 w-4" />
                             <span className="hidden sm:inline">Download</span>
                         </a>
+                        <button
+                            type="button"
+                            onClick={copyShareLink}
+                            aria-label="Copy page link"
+                            className="inline-flex items-center gap-2 rounded-xl border border-[#2a2a36] bg-[#121218]/80 px-3 py-2 text-sm font-medium text-[#f0f0f5] hover:border-[#f5b800]/50 hover:text-[#f5b800] transition-colors"
+                        >
+                            {copied ? <Check className="h-4 w-4" /> : <Share2 className="h-4 w-4" />}
+                            <span className="hidden sm:inline">{copied ? "Copied" : "Share"}</span>
+                        </button>
                         <button
                             type="button"
                             onClick={toggleFullscreen}

@@ -1,7 +1,13 @@
 import type { MetadataRoute } from "next"
-import { brands } from "@/lib/data"
+import { brands, resources } from "@/lib/data"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wedist.net"
+
+function getGoogleDriveFileId(url: string): string | null {
+  if (!/drive\.google\.com/.test(url)) return null
+  const match = url.match(/\/d\/([a-zA-Z0-9-_]+)/) ?? url.match(/[?&]id=([a-zA-Z0-9-_]+)/)
+  return match ? match[1] : null
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
@@ -10,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/company-profile",
     "/contact",
     "/resources",
+    "/downloads",
     "/products",
     "/product-details",
     "/solutions",
@@ -35,5 +42,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ])
 
-  return [...staticRoutes, ...brandRoutes]
+  const resourcePdfRoutes = resources.flatMap((resource) => {
+    if (!resource.externalUrl || !getGoogleDriveFileId(resource.externalUrl)) return []
+
+    return [
+      {
+        url: `${siteUrl}/resources/${resource.slug}/pdf`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.75,
+      },
+    ]
+  })
+
+  const productPdfRoutes = brands.flatMap((brand) =>
+    brand.products.flatMap((product) => {
+      if (!product.datasheet || !getGoogleDriveFileId(product.datasheet)) return []
+
+      return [
+        {
+          url: `${siteUrl}/products/${brand.id}/${product.id}/pdf`,
+          lastModified: new Date(),
+          changeFrequency: "monthly" as const,
+          priority: 0.8,
+        },
+      ]
+    }),
+  )
+
+  return [...staticRoutes, ...brandRoutes, ...resourcePdfRoutes, ...productPdfRoutes]
 }
