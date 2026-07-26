@@ -517,10 +517,25 @@ export const resources: ResourceItem[] = [
     description: "Complete overview of WeDist - our services, partners, and capabilities",
     category: "Company Profile",
     type: "PDF",
-    // size: "5.2 MB",
     tags: ["Company Profile", "About WeDist", "Distribution", "Partners"],
     link: true,
     externalUrl: "https://drive.google.com/file/d/1BwheBcMnsrjPw-y1-aPobfzu9voyKIGd/view?usp=sharing",
+  },
+    {
+  "id": "digifort-global-references",
+  "slug": "digifort-global-references",
+  "title": "Digifort Global References",
+  "description": "Comprehensive guide showcasing Digifort's worldwide video surveillance deployments, and international client success stories.",
+  "category": "Technical",
+  "type": "PDF",
+  "tags": [
+    "Global References",
+    "Video Surveillance",
+    "Enterprise Solutions",
+    "IP Security"
+  ],
+  "link": true,
+    externalUrl: "https://www.dropbox.com/scl/fo/hdvmgcozqoun71lawsg0t/AEzxn_kUmHdPvHY4Rr1bPv0/Reference%20Booklets/2026/Reference%20Booklet%202026-06.pdf?rlkey=k92uma2ghh5191kdyo3kxs42e&st=ry2o9jka&e=3&dl=0",
   },
   {
     id: "ai-surveillance-storage-economics",

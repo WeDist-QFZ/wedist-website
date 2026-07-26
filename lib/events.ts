@@ -52,11 +52,46 @@ export type EventItem = {
 // The registration form fields. Name, Email, Phone and Company are mandatory;
 // Position is optional. These are shared by every event registration form.
 export const EVENT_FORM_FIELDS: EventFormField[] = [
-  { name: "name", label: "Full Name", type: "text", placeholder: "Jane Doe", required: true, autoComplete: "name" },
-  { name: "email", label: "Email Address", type: "email", placeholder: "jane@company.com", required: true, autoComplete: "email" },
-  { name: "phone", label: "Phone Number", type: "tel", placeholder: "+974 0000 0000", required: true, autoComplete: "tel" },
-  { name: "company", label: "Company", type: "text", placeholder: "Your organization", required: true, autoComplete: "organization" },
-  { name: "position", label: "Position / Role", type: "text", placeholder: "e.g. Security Consultant (optional)", required: false, autoComplete: "organization-title" },
+  {
+    name: "name",
+    label: "Full Name",
+    type: "text",
+    placeholder: "Sheldon Cooper",
+    required: true,
+    autoComplete: "name",
+  },
+  {
+    name: "email",
+    label: "Email Address",
+    type: "email",
+    placeholder: "s.cooperphd@yahoo.com",
+    required: true,
+    autoComplete: "email",
+  },
+  {
+    name: "phone",
+    label: "Phone Number",
+    type: "tel",
+    placeholder: "", // Custom UI handles this
+    required: true,
+    autoComplete: "tel",
+  },
+  {
+    name: "company",
+    label: "Company",
+    type: "text",
+    placeholder: "Your Organization",
+    required: true,
+    autoComplete: "organization",
+  },
+  {
+    name: "position",
+    label: "Position / Role",
+    type: "text",
+    placeholder: "e.g. Theoretical Physicist",
+    required: false,
+    autoComplete: "organization-title",
+  },
 ]
 
 // Google Apps Script Web App endpoint that writes submissions to the

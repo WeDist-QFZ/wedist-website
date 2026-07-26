@@ -16,7 +16,7 @@ const categories = [
   "Articles / Blogs",
   "Whitepapers",
   "Case Studies",
-  "Technical Resources",
+  "Technical",
   "Downloads",
 ]
 
