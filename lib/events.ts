@@ -100,15 +100,15 @@ export const EVENT_FORM_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbzvwYhkh9QGmopL2Ymg96iIgjUPiSMX9FXZG83Xl7iKx5-woymSzCVauusnwxi9lOYNwQ/exec"
 
 export const events: EventItem[] = [
-  {
-    id: 0,
-    title: "WeDist 5th Anniversary Celebration",
-    date: "August 9, 2026",
-    time: "all day",
-    location: "WeDist",
-    description:
-      "Join us as we celebrate WeDist's 5th Anniversary, marking five years of innovation, partnerships, and growth with our valued customers, partners, and team.",
-  },
+  // {
+  //   id: 0,
+  //   title: "WeDist 5th Anniversary Celebration",
+  //   date: "August 9, 2026",
+  //   time: "all day",
+  //   location: "WeDist",
+  //   description:
+  //     "Join us as we celebrate WeDist's 5th Anniversary, marking five years of innovation, partnerships, and growth with our valued customers, partners, and team.",
+  // },
   {
     id: 1,
     slug: "digifort-training",
@@ -196,6 +196,48 @@ Whether you're a network engineer, IT manager, consultant, or system integrator,
 
 Seats are limited. Register today to reserve your place and receive the webinar joining instructions before the event.`,
 },
+{
+  id: 3,
+  slug: "digifort-sales-presales-training",
+  hasForm: true,
+  title: "Digifort VMS Sales & Presales Training",
+  date: "August 06, 2026",
+  time: "11:00 AM AST",
+  location: "Online",
+  description:
+    "An exclusive online sales enablement program for sales professionals, presales engineers, and system integrators.",
+  formTitle: "Register Your Interest",
+  formSubtitle:
+    "Seats are limited. Register your interest today and we'll share the training schedule and joining details soon.",
+      poster: {
+    src: "/images/events/digifort1.jpeg",
+    alt: "Digifort VMS Sales & Presales Training Poster",
+  },
+  longDescription: `In today's competitive security market, success is driven by more than just product knowledge. Winning projects requires the ability to position the right solution, articulate its value, and confidently address customer requirements.
+
+Join our exclusive Digifort VMS Sales & Presales Training, designed to help sales professionals, presales engineers, account managers, and system integrators strengthen their understanding of Digifort and confidently position it against competing Video Management Systems.
+
+Whether you're introducing Digifort to a new customer or designing a complete surveillance solution, this session will provide practical knowledge that can be immediately applied to real-world opportunities.
+
+
+## What You'll Learn
+
+- How to effectively position Digifort VMS in competitive opportunities
+- Digifort's key differentiators and unique selling propositions
+- Understanding customer requirements and solution positioning
+- Competitive comparison against leading VMS platforms
+- Best practices for presenting Digifort to end users and consultants
+- Tips for handling objections and increasing customer confidence
+- Sales and presales strategies to improve project win rates
+
+## Why Attend?
+
+This training is designed to provide practical, market-focused knowledge that helps you engage customers with confidence and create greater value throughout the sales cycle.
+
+By the end of the session, you'll have the tools, insights, and messaging needed to position Digifort VMS as a compelling enterprise solution while strengthening your ability to secure new business opportunities.
+
+Register your interest today and be part of an exclusive online learning session dedicated to building stronger sales and presales capabilities with Digifort VMS.`,
+}
 ]
 
 // Only events with both a slug and a form are eligible for a detail page.
