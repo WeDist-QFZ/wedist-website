@@ -47,6 +47,21 @@ export const metadata: Metadata = {
     url: "https://wedist.net",
     siteName: "WeDist Qatar",
     type: "website",
+    images: [
+      {
+        url: "/images/wedist.png",
+        width: 1200,
+        height: 630,
+        alt: "WeDist Qatar",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WeDist Qatar | Trusted Distributor for Security, Networking & Storage Brands",
+    description:
+      "WeDist is a trusted distributor in Qatar for leading security, networking, and storage brands.",
+    images: ["/images/wedist.png"],
   },
 }
 
