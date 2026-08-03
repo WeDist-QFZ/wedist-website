@@ -10,6 +10,29 @@ export const metadata: Metadata = {
   title: "WeDist Qatar | Distributor for Security, Networking & Storage Brands",
   description:
     "WeDist is the trusted distributor in Qatar for Digifort, Motorola Solutions, Antaira, Zyxel, QSAN, Western Digital, BioMax, Dorlet, Promise Technology, and eSSL.",
+  openGraph: {
+    title: "WeDist Qatar | Distributor for Security, Networking & Storage Brands",
+    description:
+      "WeDist is the trusted distributor in Qatar for Digifort, Motorola Solutions, Antaira, Zyxel, QSAN, Western Digital, BioMax, Dorlet, Promise Technology, and eSSL.",
+    url: "https://wedist.net",
+    siteName: "WeDist Qatar",
+    type: "website",
+    images: [
+      {
+        url: "/images/wedist.png",
+        width: 1200,
+        height: 630,
+        alt: "WeDist Qatar",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WeDist Qatar | Distributor for Security, Networking & Storage Brands",
+    description:
+      "WeDist is the trusted distributor in Qatar for Digifort, Motorola Solutions, Antaira, Zyxel, QSAN, Western Digital, BioMax, Dorlet, Promise Technology, and eSSL.",
+    images: ["/images/wedist.png"],
+  },
 }
 
 export default function HomePage() {
