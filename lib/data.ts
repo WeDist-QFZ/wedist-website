@@ -47,6 +47,14 @@ export const brands = [
         image: "/images/motorola-solutions/srxe4-4p-bullet.png",
         datasheet: "https://drive.google.com/file/d/1p3ksDAK2gpJQLea_bzwqbxEtYA_Bvwta/view?usp=sharing",
       },
+       {
+  id: "spectraP2-PTZ",
+  name: "Spectra Professional 2 Series PTZ",
+  description: "High-performance 2 MP 30x optical zoom environmental PTZ dome camera delivering Full HD 1080p resolution at up to 60 fps. Engineered with up to 120 dB True Wide Dynamic Range (WDR), low-light performance down to 0.1 lux, and a ruggedized IK10 vandal-resistant enclosure. Features 360° continuous pan rotation and professional analytics suite for reliable motion detection, object counting, and camera sabotage awareness.",
+  image: "/images/motorola-solutions/PE-P2230LEW0.jpg",
+  datasheet: "https://drive.google.com/file/d/1CoXufjuPAelj9RKLy4aCgrBwMRtuGct_/view?usp=sharing"
+}
+
     ],
   },
   {
