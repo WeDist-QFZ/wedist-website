@@ -546,6 +546,28 @@ export const resources: ResourceItem[] = [
     externalUrl: "https://www.dropbox.com/scl/fo/hdvmgcozqoun71lawsg0t/AEzxn_kUmHdPvHY4Rr1bPv0/Reference%20Booklets/2026/Reference%20Booklet%202026-06.pdf?rlkey=k92uma2ghh5191kdyo3kxs42e&st=ry2o9jka&e=3&dl=0",
   },
   {
+  "id": "digifort-pitch-deck",
+  "slug": "digifort-pitch-deck",
+  "title": "Digifort VMS/ ISP – Integrated Security Platform",
+  "description": "Presentation showcasing Digifort's Video Management System (VMS) and Integrated Security Platform (ISP), including enterprise video surveillance capabilities, intelligent security solutions, system integration, and applications across diverse security environments.",
+  "category": "Technical",
+  "type": "PDF",
+  "tags": [
+    "Digifort",
+    "VMS",
+    "Video Management System",
+    "ISP",
+    "Integrated Security Platform",
+    "Video Surveillance",
+    "Enterprise Security",
+    "IP Video Surveillance",
+    "Intelligent Security",
+    "Security Integration"
+  ],
+  "link": true,
+  "externalUrl": "https://drive.google.com/file/d/13CIZBGynGQXk9xcACvVnorq9ASChRinj/view?usp=sharing",
+},
+  {
     id: "ai-surveillance-storage-economics",
     slug: "ai-surveillance-storage-economics",
     title: "AI is Changing the Economics of Surveillance Storage",
