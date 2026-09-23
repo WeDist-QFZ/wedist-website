@@ -398,6 +398,13 @@ export const brands = [
         image: "/images/digifort/digifort_professional.png",
         datasheet: "https://drive.google.com/file/d/1YtzpjT1HwxIta3NtsdInx8BXdUHLdNJM/view?usp=sharing",
       },
+      {
+  id: "dgf-kb1000",
+  name: "Digifort DGF-KB1000",
+  description: "An advanced USB keyboard controller featuring a 3-axis PTZ joystick and multi-function keys designed for comprehensive VMS operation",
+  image: "/images/digifort/kb1000ap.jpg", 
+  datasheet: "https://drive.google.com/file/d/149O_hpEXylaAhG3yOuDRHqTFRamQYmpT/view?usp=sharing",
+}
     ],
   },
 ]
@@ -462,7 +469,7 @@ export const solutions = [
     id: "data-storage",
     title: "Data Storage Solutions",
     description: "Enterprise-grade storage solutions for demanding workloads",
-    brands: ["Western Digital", "QSAN", "Promise Technology"],
+    brands: ["Western Digital", "QSAN", "Promise Technology", "Infortrend"],
     icon: "server",
   },
 ]
@@ -566,6 +573,25 @@ export const resources: ResourceItem[] = [
   ],
   "link": true,
   "externalUrl": "https://drive.google.com/file/d/13CIZBGynGQXk9xcACvVnorq9ASChRinj/view?usp=sharing",
+},
+{
+  "id": "digifort-mkey-hlck-fetching-guide",
+  "slug": "digifort-mkey-hlck-fetching-guide",
+  "title": "Digifort - MKEY / HLCK Fetching Guide",
+  "description": "Step-by-step guide explaining how to retrieve the MKEY(Machine Code) or HLCK(License Dongle Code) from Digifort for license assignment.",
+  "category": "Technical",
+  "type": "PDF",
+  "tags": [
+    "Digifort",
+    "MKEY",
+    "HLCK",
+    "Machine Code",
+    "License Assignment",
+    "VMS",
+    "Licensing"
+  ],
+  "link": true,
+  "externalUrl": "https://drive.google.com/file/d/1XKsriiwWsViIN8NvSsVD3cr5s5SRHKT2/view?usp=sharing"
 },
   {
     id: "ai-surveillance-storage-economics",
