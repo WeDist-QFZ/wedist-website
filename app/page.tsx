@@ -43,7 +43,9 @@ export default function HomePage() {
         <HeroSection />
         <PartnersSection />
         <EventsSection />
-        <ProjectsSection />
+        <section id="projects">
+          <ProjectsSection />
+        </section>
       </main>
       <Footer />
     </div>

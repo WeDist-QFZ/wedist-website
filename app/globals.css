@@ -132,7 +132,11 @@
      without affecting any element's behavior. */
   html {
     zoom: 0.75;
+     scroll-behavior: smooth;
   }
+  #projects {
+  scroll-margin-top: 100px;
+}
 }
 
 /* ===============================================
