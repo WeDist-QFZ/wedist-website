@@ -142,101 +142,101 @@ Interested professionals are invited to register their interest. Training schedu
 
 Become part of this exclusive learning opportunity and take the next step in your security technology career.`,
   },
-  {
-  id: 2,
-  slug: "zyxel-secure-cloud-networks-webinar",
-  hasForm: false,
-  title: "Secure Cloud Networks & Intelligent WiFi Webinar",
-  date: "July 21, 2026",
-  time: "11:00 AM AST",
-  location: "Online",
+//   {
+//   id: 2,
+//   slug: "zyxel-secure-cloud-networks-webinar",
+//   hasForm: false,
+//   title: "Secure Cloud Networks & Intelligent WiFi Webinar",
+//   date: "July 21, 2026",
+//   time: "11:00 AM AST",
+//   location: "Online",
 
-  description:
-    "Discover how secure cloud networking and intelligent WiFi solutions can transform connectivity for stadiums, open spaces, hospitality, and enterprise environments.",
+//   description:
+//     "Discover how secure cloud networking and intelligent WiFi solutions can transform connectivity for stadiums, open spaces, hospitality, and enterprise environments.",
 
-  formTitle: "Reserve Your Seat",
+//   formTitle: "Reserve Your Seat",
 
-  formSubtitle:
-    "Join WeDist and Zyxel Networks for an exclusive live webinar exploring next-generation cloud-managed networking and intelligent wireless solutions. Register today to secure your place.",
+//   formSubtitle:
+//     "Join WeDist and Zyxel Networks for an exclusive live webinar exploring next-generation cloud-managed networking and intelligent wireless solutions. Register today to secure your place.",
 
-  poster: {
-    src: "/images/events/zyxel1.jpeg",
-    alt: "Secure Cloud Networks & Intelligent WiFi Webinar Poster",
-  },
+//   poster: {
+//     src: "/images/events/zyxel1.jpeg",
+//     alt: "Secure Cloud Networks & Intelligent WiFi Webinar Poster",
+//   },
 
-  externalLinks: [
-    {
-      title: "Registration Link", 
-      url: "https://attendee.gotowebinar.com/register/6953372463930616665",
-      description: "Register for the Secure Cloud Networks & Intelligent WiFi Webinar hosted by Zyxel Networks using this link.",
-    }
-  ],
+//   externalLinks: [
+//     {
+//       title: "Registration Link", 
+//       url: "https://attendee.gotowebinar.com/register/6953372463930616665",
+//       description: "Register for the Secure Cloud Networks & Intelligent WiFi Webinar hosted by Zyxel Networks using this link.",
+//     }
+//   ],
 
-  longDescription: `As part of WeDist's ongoing technology enablement initiatives, we are pleased to invite IT professionals, system integrators, consultants, and channel partners to an exclusive **Secure Cloud Networks & Intelligent WiFi** webinar in collaboration with **Zyxel Networks**.
+//   longDescription: `As part of WeDist's ongoing technology enablement initiatives, we are pleased to invite IT professionals, system integrators, consultants, and channel partners to an exclusive **Secure Cloud Networks & Intelligent WiFi** webinar in collaboration with **Zyxel Networks**.
 
-Discover how modern cloud-managed networking solutions simplify deployment, enhance security, and deliver reliable wireless connectivity across demanding environments including **stadiums, hospitality venues, open public spaces, education, and enterprise campuses**.
+// Discover how modern cloud-managed networking solutions simplify deployment, enhance security, and deliver reliable wireless connectivity across demanding environments including **stadiums, hospitality venues, open public spaces, education, and enterprise campuses**.
 
-Whether you're planning new deployments or modernizing existing infrastructure, this webinar will provide valuable insights into designing scalable, secure, and high-performance networks.
+// Whether you're planning new deployments or modernizing existing infrastructure, this webinar will provide valuable insights into designing scalable, secure, and high-performance networks.
 
-## What You'll Learn
+// ## What You'll Learn
 
-- Introduction to Zyxel's cloud-managed networking ecosystem
-- Building secure and scalable enterprise WiFi deployments
-- Best practices for cloud-based network management
-- Intelligent wireless solutions for high-density environments
-- Networking solutions for hospitality, public venues, education, and commercial facilities
-- Live product overview and deployment recommendations
-- Interactive Q&A session with networking specialists
+// - Introduction to Zyxel's cloud-managed networking ecosystem
+// - Building secure and scalable enterprise WiFi deployments
+// - Best practices for cloud-based network management
+// - Intelligent wireless solutions for high-density environments
+// - Networking solutions for hospitality, public venues, education, and commercial facilities
+// - Live product overview and deployment recommendations
+// - Interactive Q&A session with networking specialists
 
-## Why Attend?
+// ## Why Attend?
 
-This live webinar offers an opportunity to stay up to date with the latest networking technologies while learning practical approaches to deploying secure, reliable, and centrally managed network infrastructure.
+// This live webinar offers an opportunity to stay up to date with the latest networking technologies while learning practical approaches to deploying secure, reliable, and centrally managed network infrastructure.
 
-Whether you're a network engineer, IT manager, consultant, or system integrator, you'll gain valuable knowledge that can help simplify deployments and improve network performance.
+// Whether you're a network engineer, IT manager, consultant, or system integrator, you'll gain valuable knowledge that can help simplify deployments and improve network performance.
 
-Seats are limited. Register today to reserve your place and receive the webinar joining instructions before the event.`,
-},
-{
-  id: 3,
-  slug: "digifort-sales-presales-training",
-  hasForm: true,
-  title: "Digifort ISP (Integrated Security Platform) Sales & Presales Training",
-  date: "August 06, 2026",
-  time: "11:00 AM AST",
-  location: "Online",
-  description:
-    "An exclusive online sales enablement program for sales professionals, presales engineers, and system integrators.",
-  formTitle: "Register Your Interest",
-  formSubtitle:
-    "Seats are limited. Register your interest today and we'll share the training schedule and joining details soon.",
-  poster: {
-    src: "/images/events/digifort1.jpeg",
-    alt: "Digifort ISP (Integrated Security Platform) Sales & Presales Training Poster",
-  },
-  longDescription: `In today's competitive security market, success is driven by more than just product knowledge. Winning projects requires the ability to position the right solution, articulate its value, and confidently address customer requirements.
+// Seats are limited. Register today to reserve your place and receive the webinar joining instructions before the event.`,
+// },
+// {
+//   id: 3,
+//   slug: "digifort-sales-presales-training",
+//   hasForm: true,
+//   title: "Digifort ISP (Integrated Security Platform) Sales & Presales Training",
+//   date: "August 06, 2026",
+//   time: "11:00 AM AST",
+//   location: "Online",
+//   description:
+//     "An exclusive online sales enablement program for sales professionals, presales engineers, and system integrators.",
+//   formTitle: "Register Your Interest",
+//   formSubtitle:
+//     "Seats are limited. Register your interest today and we'll share the training schedule and joining details soon.",
+//   poster: {
+//     src: "/images/events/digifort1.jpeg",
+//     alt: "Digifort ISP (Integrated Security Platform) Sales & Presales Training Poster",
+//   },
+//   longDescription: `In today's competitive security market, success is driven by more than just product knowledge. Winning projects requires the ability to position the right solution, articulate its value, and confidently address customer requirements.
 
-Join our exclusive Digifort ISP (Integrated Security Platform) Sales & Presales Training, designed to help sales professionals, presales engineers, account managers, and system integrators strengthen their understanding of Digifort and confidently position it against competing Integrated Security Platforms.
+// Join our exclusive Digifort ISP (Integrated Security Platform) Sales & Presales Training, designed to help sales professionals, presales engineers, account managers, and system integrators strengthen their understanding of Digifort and confidently position it against competing Integrated Security Platforms.
 
-Whether you're introducing Digifort to a new customer or designing a complete security solution, this session will provide practical knowledge that can be immediately applied to real-world opportunities.
+// Whether you're introducing Digifort to a new customer or designing a complete security solution, this session will provide practical knowledge that can be immediately applied to real-world opportunities.
 
-## What You'll Learn
+// ## What You'll Learn
 
-- How to effectively position Digifort ISP (Integrated Security Platform) in competitive opportunities
-- Digifort's key differentiators and unique selling propositions
-- Understanding customer requirements and solution positioning
-- Competitive comparison against leading Integrated Security Platforms
-- Best practices for presenting Digifort to end users and consultants
-- Tips for handling objections and increasing customer confidence
-- Sales and presales strategies to improve project win rates
+// - How to effectively position Digifort ISP (Integrated Security Platform) in competitive opportunities
+// - Digifort's key differentiators and unique selling propositions
+// - Understanding customer requirements and solution positioning
+// - Competitive comparison against leading Integrated Security Platforms
+// - Best practices for presenting Digifort to end users and consultants
+// - Tips for handling objections and increasing customer confidence
+// - Sales and presales strategies to improve project win rates
 
-## Why Attend?
+// ## Why Attend?
 
-This training is designed to provide practical, market-focused knowledge that helps you engage customers with confidence and create greater value throughout the sales cycle.
+// This training is designed to provide practical, market-focused knowledge that helps you engage customers with confidence and create greater value throughout the sales cycle.
 
-By the end of the session, you'll have the tools, insights, and messaging needed to position Digifort ISP (Integrated Security Platform) as a compelling enterprise solution while strengthening your ability to secure new business opportunities.
+// By the end of the session, you'll have the tools, insights, and messaging needed to position Digifort ISP (Integrated Security Platform) as a compelling enterprise solution while strengthening your ability to secure new business opportunities.
 
-Register your interest today and be part of an exclusive online learning session dedicated to building stronger sales and presales capabilities with Digifort ISP (Integrated Security Platform).`,
-}
+// Register your interest today and be part of an exclusive online learning session dedicated to building stronger sales and presales capabilities with Digifort ISP (Integrated Security Platform).`,
+// }
 ]
 
 // Only events with both a slug and a form are eligible for a detail page.
