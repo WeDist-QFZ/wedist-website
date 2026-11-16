@@ -137,10 +137,16 @@ export function Footer() {
               </div>
 
               <ul className="space-y-3 md:space-y-2">
-                {["Home", "Products", "Solutions", "Resources", "About"].map((item) => (
+                {["Home", "Products", "Solutions", "Resources", "About", "Storage Calculator"].map((item) => (
                   <li key={item}>
                     <Link
-                      href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                      href={
+                        item === "Home"
+                          ? "/"
+                          : item === "Storage Calculator"
+                            ? "/storagecalc"
+                            : `/${item.toLowerCase()}`
+                      }
                       className="text-[#888899] hover:text-[#f5b800] text-[15px] md:text-sm transition-colors"
                     >
                       {item}
@@ -149,7 +155,6 @@ export function Footer() {
                 ))}
               </ul>
             </div>
-
             {/* Solutions */}
             <div>
               <div className="flex items-center gap-3 mb-5 md:mb-4">
@@ -158,17 +163,17 @@ export function Footer() {
               </div>
 
               <ul className="space-y-3 md:space-y-2">
-  {solutions.map((solution) => (
-    <li key={solution.id}>
-      <Link
-        href="/solutions"
-        className="text-[#888899] hover:text-[#f5b800] text-[15px] md:text-sm transition-colors"
-      >
-        {solution.title}
-      </Link>
-    </li>
-  ))}
-</ul>
+                {solutions.map((solution) => (
+                  <li key={solution.id}>
+                    <Link
+                      href="/solutions"
+                      className="text-[#888899] hover:text-[#f5b800] text-[15px] md:text-sm transition-colors"
+                    >
+                      {solution.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
