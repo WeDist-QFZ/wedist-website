@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ArrowRight, Zap } from "lucide-react"
+import { ArrowRight, FileText, Zap } from "lucide-react"
 import Image from "next/image"
 import { CyberParticles } from "./cyber-particles"
 import { GlitchText } from "./glitch-text"
@@ -195,6 +195,16 @@ export function HeroSection() {
             }`}
           >
             <a
+  href="/storagecalc"
+  className="relative px-8 md:px-12 py-4 md:py-5 text-base md:text-xl font-semibold text-[#f5b800] border-2 border-[#f5b800]/50 rounded-lg bg-transparent hover:bg-[#f5b800]/10 transition-all duration-300 overflow-hidden group inline-flex items-center justify-center"
+>
+  <span className="relative z-10 flex items-center gap-2 md:gap-3 group-hover:text-glow-sm transition-all">
+    <FileText className="w-5 h-5 md:w-6 md:h-6" />
+    DSA Report Generator
+  </span>
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#f5b800]/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+</a>
+            <a
               href="/products"
               className="relative overflow-hidden group px-8 md:px-12 py-4 md:py-5 text-base md:text-xl font-semibold rounded-lg transition-all duration-300 inline-flex items-center justify-center gap-2 md:gap-3 bg-[#f5b800] text-[#0a0a0f] hover:shadow-[0_0_30px_rgba(245,184,0,0.5)]"
             >
@@ -203,16 +213,6 @@ export function HeroSection() {
                 Explore Products
                 <ArrowRight className="w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-2 transition-transform" />
               </span>
-            </a>
-
-            <a
-              href="/solutions"
-              className="relative px-8 md:px-12 py-4 md:py-5 text-base md:text-xl font-semibold text-[#f5b800] border-2 border-[#f5b800]/50 rounded-lg bg-transparent hover:bg-[#f5b800]/10 transition-all duration-300 overflow-hidden group inline-flex items-center justify-center"
-            >
-              <span className="relative z-10 group-hover:text-glow-sm transition-all">
-                View Solutions
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#f5b800]/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
             </a>
           </div>
 

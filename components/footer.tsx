@@ -137,13 +137,13 @@ export function Footer() {
               </div>
 
               <ul className="space-y-3 md:space-y-2">
-                {["Home", "Products", "Solutions", "Resources", "About", "Storage Calculator"].map((item) => (
+                {["Home", "Products", "Solutions", "Resources", "About", "DSA Report Generator"].map((item) => (
                   <li key={item}>
                     <Link
                       href={
                         item === "Home"
                           ? "/"
-                          : item === "Storage Calculator"
+                          : item === "DSA Report Generator"
                             ? "/storagecalc"
                             : `/${item.toLowerCase()}`
                       }
