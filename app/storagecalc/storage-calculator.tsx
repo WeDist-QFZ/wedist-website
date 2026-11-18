@@ -179,7 +179,7 @@ const defaults = (): Saved => ({
     {
       id: 2,
       role: "primary",
-      name: "NVR-01",
+      name: "Primary-01",
       channels: "",
       hddType: "SATA",
       drive: 22,
@@ -698,7 +698,7 @@ export default function StorageCalculator() {
   const addSet = (role: Role) =>
     setSets((prev) => {
       const same = prev.filter((s) => s.role === role)
-      const base = same.length ? same[same.length - 1].name : role === "primary" ? "NVR-00" : "FOS-00"
+      const base = same.length ? same[same.length - 1].name : role === "primary" ? "P-00" : "FOS-00"
       const drive = same[same.length - 1]?.drive ?? 22
       return [
         ...prev,
@@ -1209,9 +1209,9 @@ export default function StorageCalculator() {
                 </h1>
 
                 <p className="text-lg md:text-xl text-[#888899] max-w-3xl mx-auto">
-                  Size 120-day primary and failover recording for MOI SSD, fit it onto any vendor&apos;s controllers and
-                  JBODs with an optimised RAID 5 / RAID 6 layout - then export the DSA storage calculation as a
-                  ready-to-submit PDF.
+                  Generate an online CCTV storage calculation report for MOI Qatar DSA submissions. Size primary and
+                  failover recording for MOI SSD, plan RAID 5 / RAID 6 across controllers and JBODs, then export a
+                  DSA-ready PDF. This is a storage calculator, not an official MOI form.
                 </p>
               </div>
             </ScrollReveal>

@@ -5,7 +5,7 @@ import { FAQS, ROUTE, SEO_DESCRIPTION, SEO_KEYWORDS, SEO_TITLE } from "./seo-con
 
 // Absolute URLs resolve against `metadataBase` set in your root layout.
 export const metadata: Metadata = {
-  title: SEO_TITLE,
+  title: { absolute: SEO_TITLE },
   description: SEO_DESCRIPTION,
   keywords: SEO_KEYWORDS,
   alternates: { canonical: ROUTE },

@@ -1,13 +1,18 @@
 export const ROUTE = "/storagecalc"
 
 export const SEO_TITLE =
-  "CCTV Storage Calculator for MOI Qatar DSA | RAID 5/6, NVR & JBOD Sizing"
+  "MOI Qatar CCTV DSA Report Generator & Storage Calculator"
 
 export const SEO_DESCRIPTION =
-  "Free CCTV storage calculator for ELV projects in Qatar. Size 120-day primary and failover recording for MOI SSD, plan RAID 5 / RAID 6 arrays across controllers and JBODs, and export a ready-to-submit DSA (Design Stage Assessment) storage calculation PDF."
+  "Generate an MOI Qatar DSA-ready CCTV storage calculation report online. Use the free storage calculator to size RAID 5/6, NVR and JBOD capacity, then export a PDF. Not an official MOI form."
 
 export const SEO_KEYWORDS = [
   "CCTV storage calculator Qatar",
+  "MOI DSA report generator",
+  "CCTV report",
+  "DSA report online generator",
+  "MOI Qatar CCTV report",
+  "storage calculator",
   "MOI Qatar storage calculation",
   "DSA document MOI Qatar",
   "Design Stage Assessment CCTV",
@@ -30,6 +35,10 @@ export interface Faq {
 
 export const FAQS: Faq[] = [
   {
+    q: "Can I generate an MOI Qatar CCTV DSA report online?",
+    a: "This online CCTV storage calculator generates a DSA-ready storage calculation PDF for MOI Qatar project submissions. It covers storage sizing and is not a complete DSA submission or an official MOI form.",
+  },
+  {
     q: "What is a DSA for CCTV in Qatar?",
     a: "DSA (Design Stage Assessment) is the design-approval stage of the Ministry of Interior Security Systems Department (MOI SSD) process for security systems in Qatar. The contractor submits the CCTV design package - drawings, camera schedule, equipment data and the CCTV storage calculation - for review before installation and the later site inspection.",
   },
@@ -46,7 +55,7 @@ export const FAQS: Faq[] = [
     a: "Drives are sold in decimal terabytes (1 TB = 10^12 bytes) while operating systems and VMS platforms report binary tebibytes (1 TiB = 2^40 bytes). A 22 TB drive gives about 20.01 TiB. Required and available storage are shown in TiB so they compare like-for-like; proposed storage is the installed drive capacity in TB.",
   },
   {
-    q: "Should I use RAID 5 or RAID 6 for an MOI-compliant NVR?",
+    q: "Should I use RAID 5 or RAID 6 for an MOI-compliant Projects?",
     a: "RAID 5 is widely used and gives one drive of protection per array. With large 16 TB+ drives and wide arrays, rebuilds take a long time and a second failure during rebuild loses the array, so RAID 6 (two parity drives per array) is the safer choice. The calculator compares both and shows drives, efficiency and fault tolerance side by side.",
   },
   {
