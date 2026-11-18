@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------- */
-/*  MOI Qatar DSA - CCTV storage calculation report (A4 landscape PDF)        */
+/*  Qatar DSA - CCTV storage calculation report (A4 landscape PDF)             */
 /*  Loaded on demand from the client:  await import("./dsa-report")           */
 /* -------------------------------------------------------------------------- */
 
@@ -588,9 +588,9 @@ export function generateDsaPdf(input: ReportInput): jsPDF {
   const doc = new jsPDF({ orientation: "landscape", unit: "mm", format: "a4", compress: true })
   doc.setProperties({
     title: safe(`${input.projectName || "CCTV"} - CCTV Storage Calculation (DSA)`),
-    subject: "CCTV system storage calculation for MOI Qatar Design Stage Assessment",
+    subject: "CCTV system storage calculation for Qatar Design Stage Assessment",
     author: safe(input.partnerName || ""),
-    keywords: "MOI Qatar, SSD, DSA, CCTV storage calculation, RAID",
+    keywords: "Qatar, DSA, CCTV storage calculation, RAID",
     creator: "Surveillance Storage Calculator",
   })
 

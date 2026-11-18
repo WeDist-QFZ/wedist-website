@@ -2,10 +2,11 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import type React from "react"
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { solutions } from "@/lib/data"
-import { Network, Shield, Server, Camera } from "lucide-react"
+import { Network, Shield, Server, Camera, Calculator, ArrowRight } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { CyberParticles } from "@/components/cyber-particles"
 import { GlitchText } from "@/components/glitch-text"
@@ -130,6 +131,31 @@ export default function SolutionsPage() {
                 </ScrollReveal>
               ))}
             </div>
+          </div>
+        </section>
+        <section className="py-8 md:py-12 bg-[#0a0a0f]" aria-labelledby="cctv-storage-tool-heading">
+          <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
+            <Link
+              href="/storagecalc"
+              className="group flex flex-col md:flex-row md:items-center gap-5 md:gap-8 p-5 md:p-8 rounded-xl border border-[#f5b800]/30 bg-[#121218]/80 hover:border-[#f5b800]/60 transition-colors"
+            >
+              <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[#f5b800]/10 text-[#f5b800] border border-[#f5b800]/20 shrink-0">
+                <Calculator className="w-7 h-7" />
+              </div>
+              <div className="flex-1">
+                <p className="text-xs uppercase tracking-[0.2em] text-[#f5b800] mb-2">Planning tool</p>
+                <h2 id="cctv-storage-tool-heading" className="text-xl md:text-2xl font-semibold text-[#f0f0f5]">
+                  Calculate CCTV storage for DSA submissions
+                </h2>
+                <p className="mt-2 text-sm md:text-base text-[#888899] leading-relaxed">
+                  Size recording storage across controllers and JBODs, compare RAID layouts, and export a DSA-ready
+                  calculation PDF.
+                </p>
+              </div>
+              <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#f5b800] group-hover:gap-3 transition-all">
+                Use the calculator <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
           </div>
         </section>
         {/* CTA SECTION */}

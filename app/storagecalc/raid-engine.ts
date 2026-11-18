@@ -262,7 +262,7 @@ function pushOne(list: Assignment[], camSetId: number, perCamTiB: number) {
 
 /**
  * Next-fit packing of whole cameras into RAID groups, in order.
- * A camera's recording lives on one array (as in MOI DSA sheets: cameras per disk pool).
+ * A camera's recording lives on one array, with cameras assigned per disk pool.
  */
 function packNextFit(caps: number[], seq: Assignment[]) {
   const loads: Assignment[][] = caps.map(() => [])

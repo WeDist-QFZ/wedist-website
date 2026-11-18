@@ -1199,7 +1199,7 @@ export default function StorageCalculator() {
               <div className="text-center">
                 <div className="inline-flex items-center gap-3 px-5 py-3 bg-[#f5b800]/10 border border-[#f5b800]/30 rounded-full mb-8">
                   <Calculator className="text-[#f5b800]" />
-                  <span className="text-[#f5b800] tracking-[0.2em]">MOI QATAR · DSA STORAGE CALCULATOR</span>
+                  <span className="text-[#f5b800] tracking-[0.2em]">CCTV · DSA STORAGE CALCULATOR</span>
                 </div>
 
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#f0f0f5] mb-8">
@@ -1209,9 +1209,9 @@ export default function StorageCalculator() {
                 </h1>
 
                 <p className="text-lg md:text-xl text-[#888899] max-w-3xl mx-auto">
-                  Generate an online CCTV storage calculation report for MOI Qatar DSA submissions. Size primary and
-                  failover recording for MOI SSD, plan RAID 5 / RAID 6 across controllers and JBODs, then export a
-                  DSA-ready PDF. This is a storage calculator, not an official MOI form.
+                  Generate an online CCTV storage calculation report for DSA submissions. Configure primary and
+                  failover retention, plan RAID 5 / RAID 6 across controllers and JBODs, then export a DSA-ready PDF.
+                  This tool creates a storage calculation, not an official form.
                 </p>
               </div>
             </ScrollReveal>
@@ -1242,7 +1242,7 @@ export default function StorageCalculator() {
               </div>
 
               <div className="grid md:grid-cols-3 gap-5 mb-6">
-                <Field label="Primary retention (days)" hint="MOI SSD standard: 120 days, 24/7.">
+                <Field label="Primary retention (days)" hint="Set the retention period required for your project.">
                   <Input
                     type="number"
                     min={1}
@@ -1629,7 +1629,7 @@ export default function StorageCalculator() {
 
                 {/* ------------------------------ STEP 5 ------------------------------ */}
                 <div className={cardCls}>
-                  <StepHeading n={5} title="DSA report (MOI Qatar)" icon={<FileText className="w-5 h-5" />} />
+                  <StepHeading n={5} title="DSA storage calculation report" icon={<FileText className="w-5 h-5" />} />
                   <p className="text-sm text-[#888899] -mt-3 mb-6 max-w-3xl">
                     These details appear on the exported CCTV storage calculation only. The PDF follows the DSA sheet
                     layout - project block, primary and failover tables per storage server and disk pool, summaries -
@@ -1759,14 +1759,12 @@ export default function StorageCalculator() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
             <div className="space-y-5">
               <h2 className="text-2xl md:text-4xl font-bold text-[#f0f0f5]">
-                CCTV storage calculation for <span className="text-[#f5b800]">MOI Qatar DSA</span> submissions
+                CCTV storage calculation for <span className="text-[#f5b800]">DSA submissions in Qatar</span>
               </h2>
               <p className="text-[#888899] leading-relaxed">
-                Every CCTV design for a regulated premises in Qatar goes through the Ministry of Interior Security
-                Systems Department (MOI SSD). At Design Stage Assessment (DSA) the contractor submits drawings, the
-                camera schedule, equipment data and a CCTV storage calculation that proves the recording servers hold
-                every camera for the required retention - 120 days of 24/7 recording for most premises under Law No. 9
-                of 2011.
+                For regulated CCTV projects in Qatar, a Design Stage Assessment (DSA) submission typically includes
+                drawings, a camera schedule, equipment data and a storage calculation showing that recording servers
+                meet the project&apos;s retention requirements.
               </p>
               <p className="text-[#888899] leading-relaxed">
                 This calculator is built for ELV projects in Qatar - hotels, towers, malls, residential compounds,
@@ -1803,7 +1801,7 @@ export default function StorageCalculator() {
             </div>
 
             <div className="space-y-4">
-              <h2 className="text-xl md:text-2xl font-bold text-[#f0f0f5]">How the MOI SSD storage calculation works</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-[#f0f0f5]">How the storage calculation works</h2>
               <ol className="list-decimal pl-5 space-y-2 text-[#888899]">
                 <li>Enter each camera set with its count and bitrate, plus primary and failover retention days.</li>
                 <li>
@@ -1818,7 +1816,7 @@ export default function StorageCalculator() {
                   Each storage set gets the fewest drives that hold its cameras, in balanced RAID groups, with optional
                   hot spares.
                 </li>
-                <li>Export the DSA storage calculation PDF and attach it to the MOI SSD submission.</li>
+                <li>Export the DSA storage calculation PDF and attach it to your project submission.</li>
               </ol>
             </div>
 
