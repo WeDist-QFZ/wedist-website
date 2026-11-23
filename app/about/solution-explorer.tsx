@@ -20,7 +20,7 @@ export function SolutionExplorer() {
     <section id="solutions" className="relative py-20 md:py-28 bg-[#0a0a0f] overflow-hidden scroll-mt-24">
       <div className="absolute inset-0 circuit-pattern opacity-15" />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
+        {/* <SectionHeading
           chapter="03"
           kicker="SOLUTION EXPLORER"
           title={
@@ -29,7 +29,7 @@ export function SolutionExplorer() {
             </>
           }
           text="Pick a vertical to see the brands we carry for it and a selection of our most-requested products."
-        />
+        /> */}
 
         <div className="grid lg:grid-cols-[300px_1fr] gap-6">
           {/* tabs */}
@@ -109,7 +109,7 @@ export function SolutionExplorer() {
                   className="group rounded-xl border border-[#2a2a36] bg-[#0d0d13] overflow-hidden hover:border-[#f5b800]/60 hover:-translate-y-1 hover:shadow-[0_14px_40px_-16px_rgba(245,184,0,0.5)] transition-all duration-300 flex flex-col"
                 >
                   <div className="h-28 sm:h-40 bg-white">
-                    <ProductImage src={p.image} alt={p.name} />
+                    {/* <ProductImage src={p.image} alt={p.name} /> */}
                   </div>
                   <div className="p-3 sm:p-4 flex-1 flex flex-col">
                     <p className="text-[10px] uppercase tracking-[0.18em] text-[#f5b800]">{p.brandName}</p>
