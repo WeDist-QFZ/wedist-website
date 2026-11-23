@@ -5,6 +5,8 @@ import { HeroSection } from "@/components/hero-section"
 import { PartnersSection } from "@/components/partners-section"
 import { EventsSection } from "@/components/events-section"
 import { ProjectsSection } from "@/components/projects-section"
+import { CompanyProfileBanner } from "@/components/company-profile-banner"
+import { SolutionsShowcase } from "@/components/solutions-showcase"
 
 export const metadata: Metadata = {
   title: "WeDist Qatar | Distributor for Security, Networking & Storage Brands",
@@ -42,7 +44,9 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <PartnersSection />
-        <EventsSection />
+        {/* <EventsSection /> */}
+        {/* <CompanyProfileBanner /> */}
+        <SolutionsShowcase />
         <section id="projects">
           <ProjectsSection />
         </section>
