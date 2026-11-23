@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://wedist.net"),
+  metadataBase: new URL("https://wedist.net"), 
   title: {
     default: "WeDist Qatar | Trusted Distributor for Security, Networking & Storage Brands",
     template: "%s | WeDist Qatar",
