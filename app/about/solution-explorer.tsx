@@ -5,7 +5,7 @@ import Link from "next/link"
 import { ArrowRight, Check } from "lucide-react"
 
 import { VERTICALS, brandsIn, productsIn, type VerticalId } from "./profile-data"
-import { LogoPlate, ProductImage, SectionHeading, VERTICAL_ICON, cardCls } from "./ui"
+import { LogoPlate, VERTICAL_ICON, cardCls } from "./ui"
 
 const SHOW = 6
 
