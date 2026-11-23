@@ -2,7 +2,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { resources } from "@/lib/data"
-import { Database, FileText, ExternalLink, Download, BookOpen, ArrowRight, Calculator } from "lucide-react"
+import { Database, FileText, ExternalLink, Download, BookOpen, ArrowRight, Calculator, Building2 } from "lucide-react"
 import Link from "next/link"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { CyberParticles } from "@/components/cyber-particles"
@@ -62,30 +62,53 @@ export default function ResourcesPage() {
           </div>
           <div className="absolute inset-0 horizontal-scan pointer-events-none" />
         </section>
-        <section className="py-8 md:py-12 bg-[#0a0a0f]" aria-labelledby="storage-calculator-heading">
-          <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
-            <Link
-              href="/storagecalc"
-              className="group flex flex-col md:flex-row md:items-center gap-5 md:gap-8 p-5 md:p-8 rounded-xl border border-[#f5b800]/30 bg-[#121218]/80 hover:border-[#f5b800]/60 transition-colors"
-            >
-              <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[#f5b800]/10 text-[#f5b800] border border-[#f5b800]/20 shrink-0">
-                <Calculator className="w-7 h-7" />
-              </div>
-              <div className="flex-1">
-                <p className="text-xs uppercase tracking-[0.2em] text-[#f5b800] mb-2">Free online tool</p>
-                <h2 id="storage-calculator-heading" className="text-xl md:text-2xl font-semibold text-[#f0f0f5]">
-                  CCTV Storage Calculator
-                </h2>
-                <p className="mt-2 text-sm md:text-base text-[#888899] leading-relaxed">
-                  Plan CCTV storage and export a DSA-ready storage calculation PDF for your project.
-                </p>
-              </div>
-              <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#f5b800] group-hover:gap-3 transition-all">
-                Open calculator <ArrowRight className="w-4 h-4" />
-              </span>
-            </Link>
-          </div>
-        </section>
+        <section className="py-8 md:py-12 bg-[#0a0a0f]" aria-label="Featured">
+  <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4 grid gap-4 md:gap-5 lg:grid-cols-2">
+    {/* Company profile */}
+    <Link
+      href="/profile"
+      className="group flex flex-col md:flex-row md:items-center gap-5 md:gap-8 p-5 md:p-8 rounded-xl border border-[#f5b800]/30 bg-[#121218]/80 hover:border-[#f5b800]/60 transition-colors"
+    >
+      <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[#f5b800]/10 text-[#f5b800] border border-[#f5b800]/20 shrink-0">
+        <Building2 className="w-7 h-7" />
+      </div>
+      <div className="flex-1">
+        <p className="text-xs uppercase tracking-[0.2em] text-[#f5b800] mb-2">About WeDist</p>
+        <h2 id="company-profile-heading" className="text-xl md:text-2xl font-semibold text-[#f0f0f5]">
+          Company Profile
+        </h2>
+        <p className="mt-2 text-sm md:text-base text-[#888899] leading-relaxed">
+          Who we are, the brands we distribute and how we support partners across our solution verticals.
+        </p>
+      </div>
+      <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#f5b800] group-hover:gap-3 transition-all">
+        View profile <ArrowRight className="w-4 h-4" />
+      </span>
+    </Link>
+
+    {/* Storage calculator */}
+    <Link
+      href="/storagecalc"
+      className="group flex flex-col md:flex-row md:items-center gap-5 md:gap-8 p-5 md:p-8 rounded-xl border border-[#f5b800]/30 bg-[#121218]/80 hover:border-[#f5b800]/60 transition-colors"
+    >
+      <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[#f5b800]/10 text-[#f5b800] border border-[#f5b800]/20 shrink-0">
+        <Calculator className="w-7 h-7" />
+      </div>
+      <div className="flex-1">
+        <p className="text-xs uppercase tracking-[0.2em] text-[#f5b800] mb-2">Free online tool</p>
+        <h2 id="storage-calculator-heading" className="text-xl md:text-2xl font-semibold text-[#f0f0f5]">
+          CCTV Storage Calculator
+        </h2>
+        <p className="mt-2 text-sm md:text-base text-[#888899] leading-relaxed">
+          Plan CCTV storage and export a DSA-ready storage calculation PDF for your project.
+        </p>
+      </div>
+      <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#f5b800] group-hover:gap-3 transition-all">
+        Open calculator <ArrowRight className="w-4 h-4" />
+      </span>
+    </Link>
+  </div>
+</section>
         <section className="py-9 md:py-16 bg-[#050508] relative overflow-hidden">
           <CyberParticles count={15} />
           <div className="absolute inset-0 hex-pattern opacity-30" />

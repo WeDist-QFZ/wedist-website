@@ -525,17 +525,17 @@ export type ResourceItem = {
 }
 
 export const resources: ResourceItem[] = [
-  {
-    id: "company-profile",
-    slug: "company-profile",
-    title: "Company Profile",
-    description: "Complete overview of WeDist - our services, partners, and capabilities",
-    category: "Company Profile",
-    type: "PDF",
-    tags: ["Company Profile", "About WeDist", "Distribution", "Partners"],
-    link: true,
-    externalUrl: "https://drive.google.com/file/d/1BwheBcMnsrjPw-y1-aPobfzu9voyKIGd/view?usp=sharing",
-  },
+  // {
+  //   id: "company-profile",
+  //   slug: "company-profile",
+  //   title: "Company Profile",
+  //   description: "Complete overview of WeDist - our services, partners, and capabilities",
+  //   category: "Company Profile",
+  //   type: "PDF",
+  //   tags: ["Company Profile", "About WeDist", "Distribution", "Partners"],
+  //   link: true,
+  //   externalUrl: "https://drive.google.com/file/d/1BwheBcMnsrjPw-y1-aPobfzu9voyKIGd/view?usp=sharing",
+  // },
     {
   "id": "digifort-global-references",
   "slug": "digifort-global-references",
